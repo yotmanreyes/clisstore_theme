@@ -40,42 +40,12 @@
 		</div><!-- .site-branding -->
 
 		<nav>
-			<ul class="nav-menu">
-				<?php
-				// Obtén las categorías principales
-				$categorias = get_categories( array(
-					'parent' => 0, // Solo categorías principales
-					'hide_empty' => false // Muestra todas las categorías
-				));
-
-				foreach ( $categorias as $categoria ): 
-					if ( $categoria->name !== 'Sin categoría' ): ?>
-					<li>
-						<a href="<?php echo esc_url( get_category_link( $categoria->term_id ) ); ?>">
-							<?php echo esc_html( $categoria->name ); ?>
-						</a>
-
-						<?php
-						// Obtén las subcategorías de la categoría actual
-						$subcategorias = get_categories( array(
-							'parent' => $categoria->term_id,
-							'hide_empty' => false // Muestra todas las subcategorías
-						));
-
-						if ( ! empty( $subcategorias ) ): ?>
-							<ul class="sub-menu">
-								<?php foreach ( $subcategorias as $subcategoria ): ?>
-									<li>
-										<a href="<?php echo esc_url( get_category_link( $subcategoria->term_id ) ); ?>">
-											<?php echo esc_html( $subcategoria->name ); ?>
-										</a>
-									</li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
-					</li>
-					<?php endif; ?>
-				<?php endforeach; ?>
-			</ul>
+			<?php
+				wp_nav_menu( array(
+					'theme_location'  => 'menu-1',
+					'menu_id'        => 'nav-menu',
+					'menu_class'     => 'nav-menu'
+				) );
+			?>
 		</nav>
 	</header><!-- #masthead -->
