@@ -1,0 +1,43 @@
+.site-footer {
+  color: #fff;
+  background-color: #000;
+  min-height: 60vh;
+
+  & .site-info {
+    display: flex;
+    padding: 40px 60px;
+  }
+
+  & .copyright {
+    max-width: 90%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  & .col-1,
+  & .col-2,
+  & .col-3 {
+    min-width: 25%;
+    margin-right: 80px;
+  }
+
+  & .footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & a {
+      display: block;
+      color: #fff;
+      margin: 20px 0;
+      text-decoration: none;
+    }
+  }
+
+  .newsletter-container {
+    & .newsletter-form input {
+      display: block;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}

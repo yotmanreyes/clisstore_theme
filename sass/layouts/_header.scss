@@ -1,0 +1,21 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  & .first-row {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  & .second-row {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  & .custom-logo {
+    max-width: 100px;
+  }
+}

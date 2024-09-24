@@ -1,0 +1,6 @@
+// Mixins (puedes agregar otros mixins según necesites)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

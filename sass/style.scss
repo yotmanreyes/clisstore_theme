@@ -1,0 +1,34 @@
+// Importar abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+
+// Importar base
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/elements";
+@import "./base/forms";
+
+// Importar layouts
+@import "./layouts/header";
+@import "./layouts/grid";
+@import "./layouts/footer";
+
+// Importar componentes
+@import "./components/navigation";
+@import "./components/post-pages";
+@import "./components/comments";
+@import "./components/widgets";
+@import "./components/media";
+@import "./components/captions";
+@import "./components/galleries";
+@import "./components/links";
+
+// Importar plugins
+// @import "./plugins/jetpack";
+
+// Importar utilities
+@import "./utilities/accessibility";
+@import "./utilities/alignments";
+
+@import "./pages/home";
