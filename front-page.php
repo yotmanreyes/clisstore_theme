@@ -78,7 +78,7 @@ get_header();
                     },
                     breakpoints: {
                         // Cuando la pantalla es menor a 1024px
-                        1024: {
+                        960: {
                             slidesPerView: 3, // Muestra 3 slides en tabletas
                             spaceBetween: 20,
                         },
