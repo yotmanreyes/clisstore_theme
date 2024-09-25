@@ -66,6 +66,33 @@ get_header();
                 // Inicializar Swiper
                 var swiper = new Swiper('.swiper-container', {
                     // Opciones de configuración de Swiper
+                    slidesPerView: 4, // Muestra 4 slides en escritorio
+                    spaceBetween: 30, // Espacio entre los slides
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        // Cuando la pantalla es menor a 1024px
+                        1024: {
+                            slidesPerView: 3, // Muestra 3 slides en tabletas
+                            spaceBetween: 20,
+                        },
+                        // Cuando la pantalla es menor a 768px
+                        768: {
+                            slidesPerView: 2, // Muestra 2 slides en móviles pequeños
+                            spaceBetween: 15,
+                        },
+                        // Cuando la pantalla es menor a 480px
+                        480: {
+                            slidesPerView: 1, // Muestra 1 slide en móviles
+                            spaceBetween: 10,
+                        },
+                    },
                 });
             </script>
         <?php endif; ?>
