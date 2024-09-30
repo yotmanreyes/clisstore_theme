@@ -154,6 +154,7 @@ input[type=submit] {
   top: 0;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1000;
 }
 .site-header .first-row {
   background-color: #111;
@@ -162,7 +163,7 @@ input[type=submit] {
   padding: 5px 0;
 }
 .site-header .second-row {
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 .site-header .custom-logo {
@@ -521,8 +522,9 @@ a:active {
 }
 
 .frontpage-banner {
-  min-height: 100vh;
+  min-height: 110vh;
   background-color: #111;
+  margin-bottom: 2rem;
 }
 
 .collections {

@@ -66,8 +66,6 @@ get_header();
                 // Inicializar Swiper
                 var swiper = new Swiper('.swiper-container', {
                     // Opciones de configuración de Swiper
-                    slidesPerView: 4, // Muestra 4 slides en escritorio
-                    spaceBetween: 30, // Espacio entre los slides
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
@@ -76,6 +74,7 @@ get_header();
                         el: '.swiper-pagination',
                         clickable: true,
                     },
+                    slidesPerView:4,
                     breakpoints: {
                         // Cuando la pantalla es menor a 1024px
                         960: {
