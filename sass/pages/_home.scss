@@ -19,10 +19,14 @@
 
 .swiper-container {
   width: 100%;
-  max-width: 1024px;
-  margin: 2rem auto;
   height: 400px; /* Altura fija para el contenedor */
 }
+
+.swiper-wrapper {
+  max-width: 1024px;
+  margin: 2rem auto;
+}
+
 .swiper-slide {
   height: 100%; /* Asegura que cada diapositiva ocupe toda la altura del contenedor */
   display: flex;
