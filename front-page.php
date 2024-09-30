@@ -74,7 +74,6 @@ get_header();
                         el: '.swiper-pagination',
                         clickable: true,
                     },
-                    slidesPerView:4,
                     breakpoints: {
                         // Cuando la pantalla es menor a 1024px
                         960: {
