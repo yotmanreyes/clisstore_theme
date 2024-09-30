@@ -154,7 +154,6 @@ input[type=submit] {
   position: sticky;
   top: 0;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1000;
 }
 .site-header .first-row {
