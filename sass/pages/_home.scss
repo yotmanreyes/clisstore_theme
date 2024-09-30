@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: center;
   background: #fff;
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .swiper-slide > img {
   max-height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
