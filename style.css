@@ -543,6 +543,8 @@ a:active {
 
 .swiper-container {
   width: 100%;
+  max-width: 1024px;
+  margin: 2rem auto;
   height: 400px; /* Altura fija para el contenedor */
 }
 
@@ -556,7 +558,7 @@ a:active {
 
 .swiper-slide > img {
   max-height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
-  width: auto; /* Mantiene la proporción de la imagen */
+  width: 100%; /* Mantiene la proporción de la imagen */
 }
 
 /*# sourceMappingURL=style.css.map */
