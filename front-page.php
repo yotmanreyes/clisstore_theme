@@ -75,7 +75,6 @@ get_header();
                         clickable: true,
                     },
                     spaceBetween: 0,
-                    centeredSlides:true,
                     breakpoints: {
                         // Cuando la pantalla es menor a 1024px
                         960: {
