@@ -178,6 +178,7 @@ input[type=submit] {
 }
 .site-footer .site-info {
   display: flex;
+  flex-direction: column;
   padding: 40px 60px;
 }
 .site-footer .copyright {
@@ -206,6 +207,11 @@ input[type=submit] {
   padding: 20px;
 }
 
+@media (min-width: 1024px) {
+  .site-footer .site-info {
+    flex-direction: row;
+  }
+}
 .nav-menu {
   position: relative;
   display: flex;

@@ -51,15 +51,14 @@
 				</svg>
 			</div>
 		</div><!-- .site-branding -->
-
-
-		<nav>
-			<?php
-				wp_nav_menu( array(
-					'theme_location'  => 'menu-1',
-					'menu_id'        => 'nav-menu',
-					'menu_class'     => 'nav-menu'
-				) );
-			?>
-		</nav>
 	</header><!-- #masthead -->
+
+	<nav>
+		<?php
+			wp_nav_menu( array(
+				'theme_location'  => 'menu-1',
+				'menu_id'        => 'nav-menu',
+				'menu_class'     => 'nav-menu'
+			) );
+		?>
+	</nav>
