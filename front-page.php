@@ -28,7 +28,7 @@ get_header();
         );
         $loop = new WP_Query( $args );
         if ( $loop->have_posts() ) : ?>
-            <section class="products">
+            <section class="section products">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>

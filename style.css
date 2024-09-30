@@ -566,4 +566,8 @@ a:active {
   object-fit: cover;
 }
 
+.section {
+  min-height: 100vh;
+}
+
 /*# sourceMappingURL=style.css.map */

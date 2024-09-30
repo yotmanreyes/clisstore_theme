@@ -40,3 +40,7 @@
   width: 100%; /* Mantiene la proporción de la imagen */
   object-fit: cover;
 }
+
+.section {
+  min-height: 100vh;
+}
