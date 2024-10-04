@@ -521,10 +521,17 @@ a:active {
 }
 
 .frontpage-banner {
-  background-size: contain !important;
+  background-size: cover !important;
   min-height: 80vh;
   background-color: #111;
   margin-bottom: 2rem;
+}
+.frontpage-banner .content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
 }
 
 .collections {
