@@ -1,5 +1,4 @@
 .site-header {
-  display: flex;
   background-color: #fff;
   // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1000;
@@ -11,6 +10,8 @@
   }
 
   & .second-row {
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     padding: 1rem 0;
