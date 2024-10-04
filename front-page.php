@@ -108,7 +108,7 @@ get_header();
         </div>
 	</main><!-- #main -->
     <div class="whatsapp-icon">
-        <img src="./images/wa-icon.svg" alt="">
+        <img src="<?php echo get_template_directory_uri() . '/images/wa-icon.svg' ?>" alt="">
     </div>
 <?php
 get_footer();
