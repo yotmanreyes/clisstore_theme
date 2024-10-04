@@ -11,6 +11,9 @@
   background-color: #fff;
   opacity: 0;
   transition: all 300ms ease;
+  &.is-show {
+    opacity: 1;
+  }
   & li {
     padding: 15px 10px;
     margin-right: 10px;

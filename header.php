@@ -30,6 +30,13 @@
 			<p>Made with Love ❤</p>
 		</div>	
 		<div class="second-row">
+			<div class="hamburger-icon">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 5H21" stroke="#111111" stroke-linecap="square"></path>
+					<path d="M3 12H21" stroke="#111111" stroke-linecap="square"></path>
+					<path d="M3 19H21" stroke="#111111" stroke-linecap="square"></path>
+				</svg>
+			</div>
 			<?php
 			the_custom_logo();
 			$clisstore_theme_description = get_bloginfo( 'description', 'display' );
