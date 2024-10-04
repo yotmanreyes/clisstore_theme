@@ -1,6 +1,5 @@
 .site-header {
-  position: sticky;
-  top: 0;
+  display: flex;
   background-color: #fff;
   // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1000;
@@ -12,6 +11,8 @@
   }
 
   & .second-row {
+    position: sticky;
+    top: 0;
     padding: 1rem 0;
     text-align: center;
   }
