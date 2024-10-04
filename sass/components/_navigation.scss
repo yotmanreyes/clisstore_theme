@@ -1,6 +1,7 @@
 .nav-menu {
   position: absolute;
   left: 0;
+  height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,12 +12,12 @@
   background-color: #fff;
   pointer-events: none;
   opacity: 0;
-  overflow-y: auto;
   transition: all 300ms ease;
   &.is-show {
     opacity: 1;
     z-index: 10;
     pointer-events: auto;
+    overflow-y: auto;
   }
   & li {
     padding: 15px 10px;
