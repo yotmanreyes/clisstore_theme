@@ -181,6 +181,9 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 37.5em) {
+  .site-header .second-row .nav-options svg {
+    margin-right: 10px;
+  }
   .site-header .second-row .menu-trigger {
     opacity: 0;
     pointer-events: none;
