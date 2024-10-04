@@ -36,7 +36,7 @@
 					<path d="M3 12H21" stroke="#111111" stroke-linecap="square"></path>
 					<path d="M3 19H21" stroke="#111111" stroke-linecap="square"></path>
 				</svg>
-				<svg class="close-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M18 6L6 18" stroke="currentColor" stroke-linecap="square"></path>
 					<path d="M6 6L18 18" stroke="currentColor" stroke-linecap="square"></path>
 				</svg>
