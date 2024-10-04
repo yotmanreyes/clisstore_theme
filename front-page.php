@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-    <section class="frontpage-banner" style='<?php echo "background:url(" . get_theme_mod('header_background_image') . ") no-repeat; background-size:contain"; ?>' >
+    <section class="frontpage-banner" style='<?php echo "background:url(" . get_theme_mod('header_background_image') . ") no-repeat;"; ?>' >
         <h1><?php echo get_theme_mod('header_title') ?></h1>
         <p><?php echo get_theme_mod('header_text') ?></p>
         <div class="cta-buttons">

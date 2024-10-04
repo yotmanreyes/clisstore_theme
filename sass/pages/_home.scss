@@ -1,4 +1,5 @@
 .frontpage-banner {
+  background-size: contain;
   min-height: 110vh;
   background-color: #111;
   margin-bottom: 2rem;
@@ -43,4 +44,10 @@
 
 .section {
   min-height: 100vh;
+}
+
+@media (min-width: 800px) {
+  .frontpage-banner {
+    background-size: cover;
+  }
 }
