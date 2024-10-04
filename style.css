@@ -263,24 +263,6 @@ input[type=submit] {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav-menu li a:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.1rem;
-  background-color: currentColor;
-  opacity: 0.3;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 400ms, opacity 400ms;
-}
-.nav-menu li a:hover:before {
-  opacity: 1;
-  transform: scaleX(1);
-  transform-origin: left;
-}
 .nav-menu .sub-menu {
   display: flex;
   position: absolute;
@@ -308,6 +290,24 @@ input[type=submit] {
     z-index: 10;
     height: auto;
     pointer-events: auto;
+  }
+  .nav-menu li a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: currentColor;
+    opacity: 0.3;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 400ms, opacity 400ms;
+  }
+  .nav-menu li a:hover:before {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
   }
 }
 .sticky {

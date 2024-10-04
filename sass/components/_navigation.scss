@@ -32,27 +32,6 @@
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0.1rem;
-      background-color: currentColor;
-      opacity: 0.3;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 400ms, opacity 400ms;
-    }
-
-    &:hover {
-      &:before {
-        opacity: 1;
-        transform: scaleX(1);
-        transform-origin: left;
-      }
-    }
   }
 
   & .sub-menu {
@@ -86,5 +65,29 @@
     z-index: 10;
     height: auto;
     pointer-events: auto;
+
+    & li a {
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.1rem;
+        background-color: currentColor;
+        opacity: 0.3;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 400ms, opacity 400ms;
+      }
+
+      &:hover {
+        &:before {
+          opacity: 1;
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
   }
 }
