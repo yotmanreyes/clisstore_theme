@@ -182,9 +182,8 @@ input[type=submit] {
 
 @media screen and (min-width: 37.5em) {
   .site-header .second-row .menu-trigger {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
     z-index: -1;
   }
 }
