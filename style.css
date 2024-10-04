@@ -180,6 +180,14 @@ input[type=submit] {
   max-width: 100px;
 }
 
+@media screen and (min-width: 37.5em) {
+  .site-header .second-row .menu-trigger {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    z-index: -1;
+  }
+}
 .site-footer {
   color: #fff;
   background-color: #000;
@@ -296,6 +304,7 @@ input[type=submit] {
   .nav-menu {
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     opacity: 1;
     z-index: 10;
     height: auto;
