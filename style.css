@@ -80,7 +80,7 @@ body {
   background: #fafafa;
   overflow-x: hidden;
 }
-W body.fixed-height {
+body.fixed-height {
   height: 100vh;
   overflow-y: hidden;
 }
