@@ -169,6 +169,9 @@ input[type=submit] {
   padding: 1rem;
   text-align: center;
 }
+.site-header .second-row .menu-trigger .close-icon {
+  transform: scale(0) rotate(45deg);
+}
 .site-header .custom-logo {
   max-width: 100px;
 }

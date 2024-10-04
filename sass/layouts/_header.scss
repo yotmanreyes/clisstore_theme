@@ -17,6 +17,12 @@
     top: 0;
     padding: 1rem;
     text-align: center;
+
+    & .menu-trigger {
+      & .close-icon {
+        transform: scale(0) rotate(45deg);
+      }
+    }
   }
 
   & .custom-logo {
