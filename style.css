@@ -170,7 +170,7 @@ input[type=submit] {
   align-items: center;
   position: sticky;
   top: 0;
-  padding: 1rem;
+  padding: 0.45rem 1rem;
   text-align: center;
 }
 .site-header .second-row .menu-trigger .close-icon {
@@ -293,6 +293,9 @@ input[type=submit] {
     z-index: 10;
     height: auto;
     pointer-events: auto;
+  }
+  .nav-menu li {
+    padding: 0 10px 20px 10px;
   }
   .nav-menu li a:before {
     content: "";
