@@ -4,6 +4,7 @@
   let menu = document.querySelector(".nav-menu");
 
   openMenuTrigger.addEventListener("click", function () {
+    document.body.toggle("fixed-height");
     menu.classList.toggle("is-show");
   });
 })();
