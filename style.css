@@ -521,7 +521,7 @@ a:active {
 }
 
 .frontpage-banner {
-  background-size: contain;
+  background-size: contain !important;
   min-height: 110vh;
   background-color: #111;
   margin-bottom: 2rem;
@@ -571,7 +571,7 @@ a:active {
 
 @media (min-width: 800px) {
   .frontpage-banner {
-    background-size: cover;
+    background-size: cover !important;
   }
 }
 
