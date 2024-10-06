@@ -354,7 +354,7 @@ input[type=submit]:focus {
 .btn {
   display: block;
   background-color: #fff;
-  padding: 1.2rem 4rem;
+  padding: 1.25rem;
   margin: 1rem 0;
   color: #000;
   text-decoration: none;
