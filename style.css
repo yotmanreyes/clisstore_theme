@@ -588,6 +588,11 @@ a:active {
     background-size: cover !important;
   }
 }
+@media (min-width: 960px) {
+  .swiper-slide {
+    margin-right: 4px;
+  }
+}
 @media (min-width: 1024px) {
   .section.products {
     padding: 0 4rem;
