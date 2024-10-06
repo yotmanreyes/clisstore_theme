@@ -72,6 +72,12 @@
   }
 }
 
+@media (min-width: 960px) {
+  .swiper-slide {
+    margin-right: 2.5px !important;
+  }
+}
+
 .whatsapp-icon {
   background-image: linear-gradient(
     112.42deg,

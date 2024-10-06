@@ -592,6 +592,11 @@ a:active {
     background-size: cover !important;
   }
 }
+@media (min-width: 960px) {
+  .swiper-slide {
+    margin-right: 2.5px !important;
+  }
+}
 .whatsapp-icon {
   background-image: linear-gradient(112.42deg, rgb(34, 206, 90) 0%, rgb(34, 206, 90) 0.01%, rgb(48, 191, 66) 100%);
   position: fixed;
