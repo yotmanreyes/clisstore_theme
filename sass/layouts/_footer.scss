@@ -47,6 +47,10 @@
       display: flex;
       list-style: none;
     }
+
+    & svg {
+      filter: grayscale(100%);
+    }
   }
 }
 
