@@ -54,7 +54,7 @@ get_header();
                                 }
 
                                 // Mostrar las demás imágenes en una galería (opcional)
-                                if ( count( $attachment_ids ) > 1 ) {
+                                if ( count( $attachment_ids ) == 1 ) {
                                     echo '<div class="product-gallery">';
                                     foreach( $attachment_ids as $attachment_id ) {
                                         echo wp_get_attachment_image( $attachment_id, 'thumbnail' );
