@@ -20,7 +20,7 @@ get_header();
             <h1><?php echo get_theme_mod('header_title') ?></h1>
             <p><?php echo get_theme_mod('header_text') ?></p>
             <div class="cta-buttons">
-                <a class="btn-primary" href="#"><?php echo get_theme_mod('cta_button_1_text') ?></a>
+                <a class="btn btn-primary" href="#"><?php echo get_theme_mod('cta_button_1_text') ?></a>
             </div>
        </div>
     </section>
