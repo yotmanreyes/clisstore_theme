@@ -559,8 +559,7 @@ a:active {
 }
 
 .swiper-wrapper {
-  max-width: 1024px;
-  margin: 2rem auto;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -580,6 +579,12 @@ a:active {
 
 .section {
   min-height: 100vh;
+}
+.section.products {
+  min-height: 100vh;
+  margin: 1rem auto;
+  max-width: 1440px;
+  padding: 0 2rem;
 }
 
 @media (min-width: 800px) {
