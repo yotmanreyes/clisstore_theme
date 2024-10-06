@@ -358,8 +358,9 @@ input[type=submit]:focus {
   margin: 1rem 0;
   color: #fff;
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   text-align: center;
+  font-weight: 600;
 }
 .btn:hover {
   color: #fff;
