@@ -62,7 +62,7 @@ get_header();
                                     echo '</div>';
                                 }
                                 ?>
-                                <h2><?php the_title(); ?></h2>
+                                <h4><?php the_title(); ?></h4>
                                 <p><?php echo $product->get_price_html(); ?></p>
                             </div>
                         <?php endwhile; wp_reset_postdata(); ?>
