@@ -361,6 +361,7 @@ input[type=submit]:focus {
   border: 2px solid #000;
 }
 .btn:hover {
+  color: #fff;
   background-color: #000;
 }
 
