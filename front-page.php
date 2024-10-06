@@ -85,7 +85,7 @@ get_header();
                             // Cuando la pantalla es menor a 1024px
                             960: {
                                 slidesPerView: 3, // Muestra 3 slides en tabletas
-                                spaceBetween: 20,
+                                spaceBetween: 2.5,
                             },
                             // Cuando la pantalla es menor a 768px
                             768: {
