@@ -19,3 +19,12 @@ input[type="submit"] {
     border-color: #aaa #bbb #bbb;
   }
 }
+
+.btn {
+  display: block;
+  background-color: #fff;
+  padding: 1.6rem 4rem;
+  &:hover {
+    background-color: #000;
+  }
+}
