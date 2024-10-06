@@ -62,8 +62,10 @@ get_header();
                                     echo '</div>';
                                 }
                                 ?>
-                                <h4><?php the_title(); ?></h4>
-                                <p><?php echo $product->get_price_html(); ?></p>
+                                <div class="product-description">
+                                    <h4><?php the_title(); ?></h4>
+                                    <p><?php echo $product->get_price_html(); ?></p>
+                                </div>
                             </div>
                         <?php endwhile; wp_reset_postdata(); ?>
                     </div>
