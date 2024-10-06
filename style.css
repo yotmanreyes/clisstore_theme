@@ -225,7 +225,7 @@ input[type=submit] {
   width: 100%;
   padding: 20px;
 }
-.site-footer .footer-payment {
+.site-footer .footer-payment ul {
   display: flex;
   list-style: none;
 }

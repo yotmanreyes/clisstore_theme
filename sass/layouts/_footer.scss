@@ -43,8 +43,10 @@
   }
 
   .footer-payment {
-    display: flex;
-    list-style: none;
+    ul {
+      display: flex;
+      list-style: none;
+    }
   }
 }
 
