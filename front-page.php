@@ -30,7 +30,7 @@ get_header();
         // Obtener los productos
         $args = array(
             'post_type'      => 'product',
-            'posts_per_page' => 4 // Número de productos a mostrar
+            'posts_per_page' => 10 // Número de productos a mostrar
         );
         $loop = new WP_Query( $args );
         if ( $loop->have_posts() ) : ?>
@@ -82,6 +82,11 @@ get_header();
                         },
                         breakpoints: {
                             // Cuando la pantalla es menor a 1024px
+                            1024: {
+                                slidesPerView: 4, // Muestra 4 slides en tabletas
+                                spaceBetween: 2.5,
+                            },
+                        
                             960: {
                                 slidesPerView: 3, // Muestra 3 slides en tabletas
                                 spaceBetween: 2.5,
