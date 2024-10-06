@@ -80,7 +80,7 @@ get_header();
                             el: '.swiper-pagination',
                             clickable: true,
                         },
-                        spaceBetween: 0,
+                        spaceBetween: 5,
                         breakpoints: {
                             // Cuando la pantalla es menor a 1024px
                             960: {
