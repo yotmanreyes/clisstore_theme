@@ -41,6 +41,11 @@
       padding: 20px;
     }
   }
+
+  .footer-payment {
+    display: flex;
+    list-style: none;
+  }
 }
 
 @media (min-width: 1024px) {
