@@ -354,10 +354,9 @@ input[type=submit]:focus {
 .btn {
   display: block;
   max-width: 270px;
-  background-color: #fff;
   padding: 0.75rem 1.25rem;
   margin: 1rem 0;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   border: 1px solid #000;
   text-align: center;
