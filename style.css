@@ -582,7 +582,7 @@ a:active {
 }
 .section.products {
   min-height: 100vh;
-  margin: 1rem auto;
+  margin: 2rem auto;
   max-width: 1440px;
   padding: 0 2rem;
 }
