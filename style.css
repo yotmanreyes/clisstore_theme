@@ -585,6 +585,7 @@ a:active {
 }
 
 .section {
+  color: #000;
   min-height: 100vh;
 }
 .section.products {
