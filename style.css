@@ -354,7 +354,8 @@ input[type=submit]:focus {
 .btn {
   display: block;
   background-color: #fff;
-  padding: 1.6rem 4rem;
+  padding: 1.2rem 4rem;
+  margin: 1rem;
 }
 .btn:hover {
   background-color: #000;
