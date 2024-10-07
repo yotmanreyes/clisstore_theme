@@ -30,6 +30,7 @@ get_header();
         // Obtener los productos
         $args = array(
             'post_type'      => 'product',
+            'hide_empty'     => 'false',
             'posts_per_page' => 10 // Número de productos a mostrar
         );
         $loop = new WP_Query( $args );
