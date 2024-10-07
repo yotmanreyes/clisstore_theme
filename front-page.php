@@ -115,28 +115,31 @@ get_header();
                     $args = array(
                         'taxonomy'   => 'product_cat',
                         'hide_empty' => false,
-                        'number'     => 3, // Limitar a 3 categorías
+                        'number'     => 6, // Limitar a 3 categorías
                     );
 
                     $categories = get_terms($args);
 
                     if (!empty($categories) && !is_wp_error($categories)) {
                         foreach ($categories as $category) {
-                            // Obtener la ID de la imagen destacada de la categoría
-                            $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
-                            $image_url = wp_get_attachment_url($thumbnail_id);
-                            ?>
-                            <div class="swiper-slide">
-                                <a href="<?php echo esc_url(get_term_link($category)); ?>">
-                                    <?php if ($image_url): ?>
-                                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($category->name); ?>" />
-                                    <?php else: ?>
-                                        <p>No image available</p> <!-- Mensaje si no hay imagen -->
-                                    <?php endif; ?>
-                                    <h2><?php echo esc_html($category->name); ?></h2>
-                                </a>
-                            </div>
-                            <?php
+
+                            if ($category->name != 'Uncategorized'){
+                                // Obtener la ID de la imagen destacada de la categoría
+                                $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
+                                $image_url = wp_get_attachment_url($thumbnail_id);
+                                ?>
+                                <div class="swiper-slide">
+                                    <a href="<?php echo esc_url(get_term_link($category)); ?>">
+                                        <?php if ($image_url): ?>
+                                            <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($category->name); ?>" />
+                                        <?php else: ?>
+                                            <p>No image available</p> <!-- Mensaje si no hay imagen -->
+                                        <?php endif; ?>
+                                        <h2><?php echo esc_html($category->name); ?></h2>
+                                    </a>
+                                </div>
+                                <?php
+                            } 
                         }
                       } 
                     ?>
