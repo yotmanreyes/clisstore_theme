@@ -666,9 +666,14 @@ a:active {
   transform: translateX(-50%);
   top: 80%;
   line-height: 2;
+  transition: transform 100ms ease;
+}
+.section.product-categories .swiper-container .swiper-slide .category-content:hover {
+  transform: 4.1rem;
+  transition: transform 300ms ease;
 }
 .section.product-categories .swiper-container .swiper-slide .category-content h3 {
-  font-weight: 20px;
+  font-weight: 2rem;
   font-weight: 800;
 }
 .section.product-categories .swiper-container img {
