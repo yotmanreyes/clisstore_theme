@@ -109,41 +109,7 @@ get_header();
             </section>
         <?php endif; ?>
 	</main><!-- #main -->
-    <div class="collections">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <?php
-                    $categories = get_terms('product_cat');
-                    foreach ($categories as $category) {
-                        ?>
-                        <div class="swiper-slide">
-                            <h2><?php echo esc_html($category->name); ?></h2>
-                            <a href="<?php echo esc_url(get_term_link($category)); ?>">
-                                <?php echo wp_get_attachment_image(get_term_meta($category->term_id, 'thumbnail_id', true), 'full'); ?>
-                            </a>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            </script>
-        </div>
+    
     <a href="<?php echo get_theme_mod('whatsapp-url') ?>" class="whatsapp-icon">
         <img src="<?php echo get_template_directory_uri() . '/images/wa-icon.svg' ?>" alt="">
     </a>
