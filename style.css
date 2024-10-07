@@ -668,13 +668,13 @@ a:active {
   line-height: 2;
   transition: transform 100ms ease;
 }
-.section.product-categories .swiper-container .swiper-slide .category-content:hover {
-  transform: translate(-50%, -4.1rem);
-  transition: transform 300ms ease;
-}
 .section.product-categories .swiper-container .swiper-slide .category-content h3 {
   font-weight: 2rem;
   font-weight: 800;
+}
+.section.product-categories .swiper-container .swiper-slide:hover .section.product-categories .swiper-container .swiper-slide .category-content {
+  transform: translate(-50%, -4.1rem);
+  transition: transform 300ms ease;
 }
 .section.product-categories .swiper-container img {
   height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
