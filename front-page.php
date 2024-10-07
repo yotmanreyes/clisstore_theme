@@ -30,7 +30,6 @@ get_header();
         // Obtener los productos
         $args = array(
             'post_type'      => 'product',
-            'hide_empty'     => 'false',
             'posts_per_page' => 10 // Número de productos a mostrar
         );
         $loop = new WP_Query( $args );
@@ -115,7 +114,7 @@ get_header();
                     <?php
                     $args = array(
                         'taxonomy'   => 'product_cat',
-                        'hide_empty' => true,
+                        'hide_empty' => false,
                         'number'     => 3, // Limitar a 3 categorías
                     );
 
