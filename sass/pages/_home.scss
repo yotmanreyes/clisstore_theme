@@ -97,7 +97,7 @@
           line-height: 2;
           transition: transform 100ms ease;
           &:hover {
-            transform: (4.1rem);
+            transform: translateY(-4.1rem);
             transition: transform 300ms ease;
           }
 
