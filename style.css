@@ -646,12 +646,12 @@ a:active {
 .section.product-categories {
   margin: auto;
   background-color: #f5ebdf;
-  overflow: hidden;
 }
 .section.product-categories .swiper-container {
   width: 100%;
   margin: 2rem auto;
   height: 500px; /* Altura fija para el contenedor */
+  overflow: hidden;
 }
 .section.product-categories .swiper-container .swiper-slide {
   position: relative;

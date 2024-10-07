@@ -66,11 +66,11 @@
   &.product-categories {
     margin: auto;
     background-color: #f5ebdf;
-    overflow: hidden;
     & .swiper-container {
       width: 100%;
       margin: 2rem auto;
       height: 500px; /* Altura fija para el contenedor */
+      overflow: hidden;
 
       & .swiper-slide {
         position: relative;
