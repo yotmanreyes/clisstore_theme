@@ -646,6 +646,7 @@ a:active {
 .section.product-categories {
   margin: auto;
   background-color: #f5ebdf;
+  overflow: hidden;
 }
 .section.product-categories .swiper-container {
   width: 100%;
