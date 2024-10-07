@@ -645,7 +645,7 @@ a:active {
   width: 100%;
   height: 500px; /* Altura fija para el contenedor */
 }
-.section.product-categories .swiper-container .swiper-slide > img {
+.section.product-categories .swiper-container img {
   height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
   width: 100%; /* Mantiene la proporción de la imagen */
   object-fit: cover;
