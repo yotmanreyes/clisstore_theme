@@ -35,7 +35,7 @@ get_header();
         $loop = new WP_Query( $args );
         if ( $loop->have_posts() ) : ?>
             <section class="section products">
-                <div class="swiper-container">
+                <div class="swiper-container" id="productsSlider">
                     <div class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <div class="swiper-slide">
@@ -72,7 +72,7 @@ get_header();
                 </div>
                 <script>
                     // Inicializar Swiper
-                    var swiper = new Swiper('.swiper-container', {
+                    var swiper = new Swiper('#productsSlider', {
                         // Opciones de configuración de Swiper
                         navigation: {
                             nextEl: '.swiper-button-next',
@@ -108,6 +108,51 @@ get_header();
                 </script>
             </section>
         <?php endif; ?>
+        <section class="section product-categories">
+            <div class="swiper-container" id="productsCategories">
+                <div class="swiper-wrapper">
+                    <?php
+                    $args = array(
+                        'taxonomy'   => 'product_cat',
+                        'hide_empty' => true,
+                        'number'     => 3, // Limitar a 3 categorías
+                    );
+
+                    $categories = get_terms($args);
+
+                    if (!empty($categories) && !is_wp_error($categories)) {
+                        foreach ($categories as $category) {
+                            ?>
+                            <div class="swiper-slide">
+                                <a href="<?php echo esc_url(get_term_link($category)); ?>">
+                                    <?php echo wp_get_attachment_image(get_term_meta($category->term_id, 'thumbnail_id', true), 'full'); ?>
+                                    <h2><?php echo esc_html($category->name); ?></h2>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                    }
+                    ?>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <script>
+                var swiper = new Swiper('#productsCategories', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    loop: true, // Para que el slider sea cíclico
+                });
+            </script>
+        </section>
 	</main><!-- #main -->
     
     <a href="<?php echo get_theme_mod('whatsapp-url') ?>" class="whatsapp-icon">
