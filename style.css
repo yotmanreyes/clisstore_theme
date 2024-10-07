@@ -639,7 +639,7 @@ a:active {
   padding: 0 2rem;
 }
 .section.product-categories {
-  max-width: 1024px;
+  padding: 4rem;
   margin: auto;
   background-color: #f5ebdf;
 }
