@@ -672,7 +672,7 @@ a:active {
   font-weight: 2rem;
   font-weight: 800;
 }
-.section.product-categories .swiper-container .swiper-slide:hover .section.product-categories .swiper-container .swiper-slide .category-content {
+.section.product-categories .swiper-container .swiper-slide:hover .category-content {
   transform: translate(-50%, -4.1rem);
   transition: transform 300ms ease;
 }
