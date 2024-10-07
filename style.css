@@ -638,14 +638,12 @@ a:active {
   min-height: 100vh;
   margin: 2rem auto;
   max-width: 1440px;
-  padding: 0 2rem;
 }
 .section.products .swiper-container {
   width: 100%;
   height: 400px; /* Altura fija para el contenedor */
 }
 .section.product-categories {
-  padding: 4rem;
   margin: auto;
   background-color: #f5ebdf;
 }
@@ -704,6 +702,9 @@ a:active {
 @media (min-width: 1024px) {
   .section.products {
     padding: 2rem 4rem;
+  }
+  .section.products-category {
+    padding: 4rem;
   }
 }
 .whatsapp-icon {
