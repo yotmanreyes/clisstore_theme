@@ -643,7 +643,18 @@ a:active {
 }
 .section.product-categories .swiper-container {
   width: 100%;
+  max-width: 1024px;
+  margin: 2rem auto;
   height: 500px; /* Altura fija para el contenedor */
+}
+.section.product-categories .swiper-container .swiper-slide {
+  position: relative;
+}
+.section.product-categories .swiper-container .swiper-slide .category-content {
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  line-height: 2;
 }
 .section.product-categories .swiper-container img {
   height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */

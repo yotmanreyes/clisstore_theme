@@ -135,7 +135,9 @@ get_header();
                                         <?php else: ?>
                                             <p>No image available</p> <!-- Mensaje si no hay imagen -->
                                         <?php endif; ?>
-                                        <h2><?php echo esc_html($category->name); ?></h2>
+                                        <div class="category-content">
+                                            <h3><?php echo esc_html($category->name); ?></h3>
+                                        </div>
                                     </a>
                                 </div>
                                 <?php

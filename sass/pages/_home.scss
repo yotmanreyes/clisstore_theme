@@ -71,7 +71,20 @@
 
     & .swiper-container {
       width: 100%;
+      max-width: 1024px;
+      margin: 2rem auto;
       height: 500px; /* Altura fija para el contenedor */
+
+      & .swiper-slide {
+        position: relative;
+
+        & .category-content {
+          color: #fff;
+          position: absolute;
+          top: 80%;
+          line-height: 2;
+        }
+      }
 
       & img {
         height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
