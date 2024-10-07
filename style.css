@@ -638,6 +638,11 @@ a:active {
   max-width: 1440px;
   padding: 0 2rem;
 }
+.section.products-categories {
+  max-width: 1024px;
+  margin: auto;
+  background-color: #f5ebdf;
+}
 
 @media (min-width: 800px) {
   .frontpage-banner {
