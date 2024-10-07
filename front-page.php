@@ -122,16 +122,23 @@ get_header();
 
                     if (!empty($categories) && !is_wp_error($categories)) {
                         foreach ($categories as $category) {
+                            // Obtener la ID de la imagen destacada de la categoría
+                            $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
+                            $image_url = wp_get_attachment_url($thumbnail_id);
                             ?>
                             <div class="swiper-slide">
                                 <a href="<?php echo esc_url(get_term_link($category)); ?>">
-                                    <?php echo wp_get_attachment_image(get_term_meta($category->term_id, 'thumbnail_id', true), 'full'); ?>
+                                    <?php if ($image_url): ?>
+                                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($category->name); ?>" />
+                                    <?php else: ?>
+                                        <p>No image available</p> <!-- Mensaje si no hay imagen -->
+                                    <?php endif; ?>
                                     <h2><?php echo esc_html($category->name); ?></h2>
                                 </a>
                             </div>
                             <?php
                         }
-                    }
+                      } 
                     ?>
                 </div>
                 <div class="swiper-pagination"></div>
