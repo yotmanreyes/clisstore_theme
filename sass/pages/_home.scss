@@ -78,11 +78,28 @@
       & .swiper-slide {
         position: relative;
 
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #000;
+          opacity: 0.65;
+        }
+
         & .category-content {
           color: #fff;
           position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
           top: 80%;
           line-height: 2;
+
+          & h3 {
+            font-weight: 800;
+          }
         }
       }
 

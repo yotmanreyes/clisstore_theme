@@ -650,11 +650,26 @@ a:active {
 .section.product-categories .swiper-container .swiper-slide {
   position: relative;
 }
+.section.product-categories .swiper-container .swiper-slide::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.65;
+}
 .section.product-categories .swiper-container .swiper-slide .category-content {
   color: #fff;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   top: 80%;
   line-height: 2;
+}
+.section.product-categories .swiper-container .swiper-slide .category-content h3 {
+  font-weight: 800;
 }
 .section.product-categories .swiper-container img {
   height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
