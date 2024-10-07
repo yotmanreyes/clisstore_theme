@@ -658,7 +658,7 @@ a:active {
   right: 0;
   bottom: 0;
   background-color: #000;
-  opacity: 0.65;
+  opacity: 0.25;
 }
 .section.product-categories .swiper-container .swiper-slide .category-content {
   color: #fff;
@@ -669,6 +669,7 @@ a:active {
   line-height: 2;
 }
 .section.product-categories .swiper-container .swiper-slide .category-content h3 {
+  font-weight: 20px;
   font-weight: 800;
 }
 .section.product-categories .swiper-container img {
