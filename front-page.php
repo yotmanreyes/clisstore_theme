@@ -150,6 +150,23 @@ get_header();
                         prevEl: '.swiper-button-prev',
                     },
                     loop: true, // Para que el slider sea cíclico
+                    breakpoints: {
+                        // Cuando la pantalla es menor a 1024px
+                        960: {
+                            slidesPerView: 3, // Muestra 3 slides en tabletas
+                            spaceBetween: 2.5,
+                        },
+                        // Cuando la pantalla es menor a 768px
+                        768: {
+                            slidesPerView: 2, // Muestra 2 slides en móviles pequeños
+                            spaceBetween: 15,
+                        },
+                        // Cuando la pantalla es menor a 480px
+                        480: {
+                            slidesPerView: 1, // Muestra 1 slide en móviles
+                            spaceBetween: 10,
+                        },
+                    },
                 });
             </script>
         </section>
