@@ -40,7 +40,7 @@
 				</form>
 			</div>
 		</div><!-- .site-info -->
-		<div class="">
+		<div class="footer-legal">
 			<div class="copyright">
 				<p>© <?php echo date('Y') ?> - All rights reserved</p>
 			</div>

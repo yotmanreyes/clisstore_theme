@@ -9,6 +9,12 @@
     padding: 40px 60px;
   }
 
+  & .footer-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   & .copyright {
     max-width: 90%;
     text-align: center;
@@ -58,6 +64,11 @@
   .site-footer {
     & .site-info {
       flex-direction: row;
+    }
+
+    & .footer-legal {
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 }

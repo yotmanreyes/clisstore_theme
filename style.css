@@ -200,6 +200,11 @@ input[type=submit] {
   flex-direction: column;
   padding: 40px 60px;
 }
+.site-footer .footer-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .site-footer .copyright {
   max-width: 90%;
   text-align: center;
@@ -236,6 +241,10 @@ input[type=submit] {
 @media (min-width: 1024px) {
   .site-footer .site-info {
     flex-direction: row;
+  }
+  .site-footer .footer-legal {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 .nav-menu {
