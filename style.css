@@ -203,7 +203,6 @@ input[type=submit] {
 .site-footer .footer-legal {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .site-footer .copyright {
   max-width: 90%;
