@@ -663,13 +663,13 @@ a:active {
   color: #fff;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0);
   top: 80%;
   line-height: 2;
   transition: transform 100ms ease;
 }
 .section.product-categories .swiper-container .swiper-slide .category-content:hover {
-  transform: translateY(-4.1rem);
+  transform: translate(-50%, -4.1rem);
   transition: transform 300ms ease;
 }
 .section.product-categories .swiper-container .swiper-slide .category-content h3 {
