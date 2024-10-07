@@ -669,7 +669,8 @@ a:active {
   transition: transform 100ms ease;
 }
 .section.product-categories .swiper-container .swiper-slide .category-content h3 {
-  font-weight: 2rem;
+  text-transform: uppercase;
+  font-weight: 3rem;
   font-weight: 800;
 }
 .section.product-categories .swiper-container .swiper-slide:hover .category-content {
