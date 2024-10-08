@@ -646,6 +646,7 @@ a:active {
   height: 400px; /* Altura fija para el contenedor */
 }
 .section.product-categories {
+  position: relative;
   margin: auto;
   background-color: #f5ebdf;
 }
