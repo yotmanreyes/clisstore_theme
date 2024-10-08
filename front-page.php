@@ -74,14 +74,6 @@ get_header();
                     // Inicializar Swiper
                     var swiper = new Swiper('#productsSlider', {
                         // Opciones de configuración de Swiper
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-                        pagination: {
-                            el: '.swiper-pagination',
-                            clickable: true,
-                        },
                         breakpoints: {
                             // Cuando la pantalla es menor a 1024px
                             1024: {
