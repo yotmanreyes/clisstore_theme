@@ -69,11 +69,17 @@ get_header();
                             </div>
                         <?php endwhile; wp_reset_postdata(); ?>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
                 <script>
                     // Inicializar Swiper
                     var swiper = new Swiper('#productsSlider', {
                         // Opciones de configuración de Swiper
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
                         breakpoints: {
                             // Cuando la pantalla es menor a 1024px
                             1024: {
@@ -138,17 +144,12 @@ get_header();
                       } 
                     ?>
                 </div>
-                <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
 
             <script>
                 var swiper = new Swiper('#productsCategories', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
