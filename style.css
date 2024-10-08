@@ -646,11 +646,11 @@ a:active {
   height: 400px; /* Altura fija para el contenedor */
 }
 .section.product-categories {
-  position: relative;
   margin: auto;
   background-color: #f5ebdf;
 }
 .section.product-categories .swiper-container {
+  position: relative;
   width: 100%;
   margin: 2rem auto;
   height: 500px; /* Altura fija para el contenedor */
