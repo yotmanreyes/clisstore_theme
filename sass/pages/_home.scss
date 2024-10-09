@@ -131,21 +131,23 @@
 }
 
 .banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40vh;
-  background-color: #f5ebdf;
-  padding: 2em 4em;
-}
-
-.banner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 60vh;
   background-color: #f5ebdf;
   padding: 2em 4em;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #000;
+  }
 }
 
 @media (min-width: 800px) {
