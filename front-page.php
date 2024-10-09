@@ -39,6 +39,7 @@ get_header();
                     <div class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <div class="swiper-slide">
+                                <a class="link" href="<?php echo esc_url(get_term_link()); ?>">
                                 <?php
                                 // Obtener todas las imágenes del producto
                                 $attachment_ids = $product->get_gallery_attachment_ids();
@@ -66,6 +67,7 @@ get_header();
                                     <h4><?php the_title(); ?></h4>
                                     <p><?php echo $product->get_price_html(); ?></p>
                                 </div>
+                               </a>
                             </div>
                         <?php endwhile; wp_reset_postdata(); ?>
                     </div>
