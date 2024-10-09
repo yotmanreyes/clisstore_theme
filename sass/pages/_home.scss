@@ -134,6 +134,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 40vh;
+  background-color: #f5ebdf;
+  padding: 2em 4em;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 60vh;
   background-color: #f5ebdf;
   padding: 2em 4em;
