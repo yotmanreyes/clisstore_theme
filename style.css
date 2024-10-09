@@ -632,6 +632,8 @@ a:active {
   left: 0;
   right: 0;
   bottom: 0;
+  text-decoration: none;
+  color: #000;
 }
 
 .swiper-slide > img {
