@@ -100,8 +100,8 @@ function clisstore_theme_customize_register( $wp_customize ) {
         'type'     => 'url',
     ) );
 
-       // Section 1: Banner Section
-       $wp_customize->add_section('banner_section', array(
+    // Section 1: Banner Section
+    $wp_customize->add_section('banner_section', array(
         'title' => __('Banner Settings', 'your-textdomain'),
         'priority' => 30,
     ));

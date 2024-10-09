@@ -177,6 +177,42 @@ get_header();
                 });
             </script>
         </section>
+        <?php
+            // Retrieve settings from the Customizer
+            $banner_image = get_theme_mod('banner_image');
+            $street_address = get_theme_mod('street_address');
+            $short_headline = get_theme_mod('short_headline');
+            $cta_title = get_theme_mod('cta_title');
+            $cta_button_text = get_theme_mod('cta_button_text');
+            $cta_button_url = get_theme_mod('cta_button_url');
+
+            // Check if banner image is set and display it
+            if ($banner_image) : ?>
+                <div class="banner" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
+                    <div class="banner-content">
+                        <?php if ($short_headline) : ?>
+                            <h2><?php echo esc_html($short_headline); ?></h2>
+                        <?php endif; ?>
+                        <?php if ($street_address) : ?>
+                            <p><?php echo esc_html($street_address); ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
+            <!-- Call to Action Section -->
+            <?php if ($cta_title || $cta_button_text) : ?>
+                <div class="cta-banner">
+                    <?php if ($cta_title) : ?>
+                        <h3><?php echo esc_html($cta_title); ?></h3>
+                    <?php endif; ?>
+                    <?php if ($cta_button_text && $cta_button_url) : ?>
+                        <a href="<?php echo esc_url($cta_button_url); ?>" class="cta-button">
+                            <?php echo esc_html($cta_button_text); ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
 	</main><!-- #main -->
 
     <aside>
