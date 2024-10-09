@@ -176,6 +176,37 @@ get_header();
             </script>
         </section>
 	</main><!-- #main -->
+
+    <aside>
+        <div class="search-container">
+            <?php get_product_search_form(); ?>
+        </div>
+        <div class="shopcart-container">
+            <?php 
+                // Get all cart items
+                $cart_items = WC()->cart->get_cart();
+
+                // Loop through each item in the cart
+                foreach ($cart_items as $cart_item_key => $cart_item) {
+                    // Get product object
+                    $product = $cart_item['data'];
+
+                    // Get product details
+                    $product_name = $product->get_name(); // Product name
+                    $quantity = $cart_item['quantity']; // Quantity in cart
+                    $subtotal = $cart_item['line_subtotal']; // Subtotal for this item
+                    $total = $cart_item['line_total']; // Total for this item
+
+                    // Output product details
+                    echo 'Product Name: ' . esc_html($product_name) . '<br>';
+                    echo 'Quantity: ' . esc_html($quantity) . '<br>';
+                    echo 'Subtotal: ' . wc_price($subtotal) . '<br>';
+                    echo 'Total: ' . wc_price($total) . '<br>';
+                    echo '<hr>'; // Separator for each item
+                }
+            ?>
+        </div>
+    </aside>
     
     <a href="<?php echo get_theme_mod('whatsapp-url') ?>" class="whatsapp-icon">
         <img src="<?php echo get_template_directory_uri() . '/images/wa-icon.svg' ?>" alt="">
