@@ -38,7 +38,6 @@ get_header();
                 <div class="swiper-container" id="productsSlider">
                     <div class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                            
                             <div class="swiper-slide">
                                 <?php
                                 // Obtener todas las imágenes del producto
@@ -127,8 +126,8 @@ get_header();
                                 $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
                                 $image_url = wp_get_attachment_url($thumbnail_id);
                                 ?>
-                                <a href="<?php echo esc_url(get_term_link($category)); ?>">
-                                    <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <a class="link" href="<?php echo esc_url(get_term_link($category)); ?>">
                                         <?php if ($image_url): ?>
                                             <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($category->name); ?>" />
                                         <?php else: ?>
@@ -137,8 +136,8 @@ get_header();
                                         <div class="category-content">
                                             <h3><?php echo esc_html($category->name); ?></h3>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                                 <?php
                             } 
                         }

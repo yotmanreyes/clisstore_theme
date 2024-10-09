@@ -626,6 +626,13 @@ a:active {
   align-items: center;
   margin-right: 0 !important;
 }
+.swiper-slide .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .swiper-slide > img {
   max-height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
