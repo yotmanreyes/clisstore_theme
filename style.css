@@ -638,7 +638,6 @@ a:active {
 
 .swiper-slide img {
   height: 100%; /* Ajusta la imagen para que no exceda la altura de la diapositiva */
-  width: 100%; /* Mantiene la proporción de la imagen */
   object-fit: cover;
 }
 
