@@ -130,6 +130,15 @@
   }
 }
 
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  background-color: #f5ebdf;
+  padding: 2em 4em;
+}
+
 @media (min-width: 800px) {
   .frontpage-banner {
     background-size: cover !important;
