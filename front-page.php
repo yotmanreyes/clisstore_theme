@@ -39,7 +39,7 @@ get_header();
                     <div class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <div class="swiper-slide">
-                                <a class="link" href="<?php echo esc_url(get_term_link()); ?>">
+                                <a class="link" href="<?php echo esc_url(get_the_permalink()); ?>">
                                 <?php
                                 // Obtener todas las imágenes del producto
                                 $attachment_ids = $product->get_gallery_attachment_ids();
