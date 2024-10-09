@@ -190,11 +190,11 @@ get_header();
             if ($banner_image) : ?>
                 <div class="banner" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
                     <div class="banner-content">
-                        <?php if ($street_address) : ?>
-                            <h2><?php echo esc_html($street_address); ?></h2>
-                        <?php endif; ?>
                         <?php if ($short_headline) : ?>
                             <p><?php echo esc_html($short_headline); ?></p>
+                        <?php endif; ?>
+                        <?php if ($street_address) : ?>
+                            <h2><?php echo esc_html($street_address); ?></h2>
                         <?php endif; ?>
                     </div>
                 </div>
