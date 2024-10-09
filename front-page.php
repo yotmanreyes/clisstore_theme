@@ -202,7 +202,7 @@ get_header();
 
             <!-- Call to Action Section -->
             <?php if ($cta_title || $cta_button_text) : ?>
-                <div class="cta-banner">
+                <div class="banner cta-banner">
                     <?php if ($cta_title) : ?>
                         <h3><?php echo esc_html($cta_title); ?></h3>
                     <?php endif; ?>
