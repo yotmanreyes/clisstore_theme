@@ -99,6 +99,103 @@ function clisstore_theme_customize_register( $wp_customize ) {
         'section'  => 'header_background_section',
         'type'     => 'url',
     ) );
+
+       // Section 1: Banner Section
+       $wp_customize->add_section('banner_section', array(
+        'title' => __('Banner Settings', 'your-textdomain'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('banner_image', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner_image', array(
+        'label' => __('Banner Image', 'your-textdomain'),
+        'section' => 'banner_section',
+        'settings' => 'banner_image',
+    )));
+
+    $wp_customize->add_setting('street_address', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('street_address', array(
+        'label' => __('Street Address', 'your-textdomain'),
+        'section' => 'banner_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('short_headline', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('short_headline', array(
+        'label' => __('Short Headline', 'your-textdomain'),
+        'section' => 'banner_section',
+        'type' => 'text',
+    ));
+
+    // Section 2: Shipping Features
+    $wp_customize->add_section('shipping_features_section', array(
+        'title' => __('Shipping Features', 'your-textdomain'),
+        'priority' => 31,
+    ));
+
+    for ($i = 1; $i <= 3; $i++) {
+        $wp_customize->add_setting("shipping_feature_$i", array(
+            'default' => '',
+            'sanitize_callback' => 'sanitize_text_field',
+        ));
+        
+        $wp_customize->add_control("shipping_feature_$i", array(
+            'label' => __("Shipping Feature Box $i", 'your-textdomain'),
+            'section' => 'shipping_features_section',
+            'type' => 'text',
+        ));
+    }
+
+    // Section 3: Call to Action Banner
+    $wp_customize->add_section('cta_banner_section', array(
+        'title' => __('Call to Action Banner', 'your-textdomain'),
+        'priority' => 32,
+    ));
+
+    $wp_customize->add_setting('cta_title', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('cta_title', array(
+        'label' => __('CTA Title', 'your-textdomain'),
+        'section' => 'cta_banner_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('cta_button_text', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('cta_button_text', array(
+        'label' => __('CTA Button Text', 'your-textdomain'),
+        'section' => 'cta_banner_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('cta_button_url', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    
+    $wp_customize->add_control('cta_button_url', array(
+        'label' => __('CTA Button URL', 'your-textdomain'),
+        'section' => 'cta_banner_section',
+        'type' => 'url',
+    ));
 }
 add_action( 'customize_register', 'clisstore_theme_customize_register' );
 
