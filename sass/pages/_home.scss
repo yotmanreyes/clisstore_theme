@@ -178,8 +178,13 @@
   justify-content: center;
   min-height: 60vh;
   background-color: #f5ebdf;
-  color: #fff;
-  padding: 2em 4em;
+  color: #000;
+  padding: 2em;
+
+  &.banner-white-color {
+    color: #fff;
+  }
+
   &.banner-bg::before {
     content: "";
     position: absolute;
@@ -194,6 +199,7 @@
 
   & .banner-content {
     position: relative;
+    font-weight: 600;
     z-index: 1;
   }
 }
