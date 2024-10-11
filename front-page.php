@@ -188,7 +188,7 @@ get_header();
 
             // Check if banner image is set and display it
             if ($banner_image) : ?>
-                <div class="banner banner-bg" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
+                <div class="banner banner-bg banner-white-color" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
                     <div class="banner-content">
                         <?php if ($short_headline) : ?>
                             <p><?php echo esc_html($short_headline); ?></p>
