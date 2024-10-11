@@ -6,8 +6,8 @@
   let shopCartContainer = document.querySelector(".shopcart-container");
   let searchBoxTrigger = document.querySelector(".search-box-trigger");
   let shopCartTrigger = document.querySelector(".shopcart-trigger");
-  let searchBoxCloseBtn = document.querySelector("close-searchbox");
-  let shopCartCloseBtn = document.querySelector("close-shopcart");
+  let searchBoxCloseBtn = document.querySelector(".close-searchbox");
+  let shopCartCloseBtn = document.querySelector(".close-shopcart");
 
   openMenuTrigger.addEventListener("click", function () {
     document.body.classList.toggle("fixed-height");
