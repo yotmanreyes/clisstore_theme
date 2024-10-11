@@ -188,7 +188,7 @@ get_header();
 
             // Check if banner image is set and display it
             if ($banner_image) : ?>
-                <div class="banner" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
+                <div class="banner banner-bg" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
                     <div class="banner-content">
                         <?php if ($short_headline) : ?>
                             <p><?php echo esc_html($short_headline); ?></p>
@@ -203,14 +203,16 @@ get_header();
             <!-- Call to Action Section -->
             <?php if ($cta_title || $cta_button_text) : ?>
                 <div class="banner cta-banner">
-                    <?php if ($cta_title) : ?>
-                        <h3><?php echo esc_html($cta_title); ?></h3>
-                    <?php endif; ?>
-                    <?php if ($cta_button_text && $cta_button_url) : ?>
-                        <a href="<?php echo esc_url($cta_button_url); ?>" class="cta-button">
-                            <?php echo esc_html($cta_button_text); ?>
-                        </a>
-                    <?php endif; ?>
+                    <div class="banner-content">
+                        <?php if ($cta_title) : ?>
+                            <h3><?php echo esc_html($cta_title); ?></h3>
+                        <?php endif; ?>
+                        <?php if ($cta_button_text && $cta_button_url) : ?>
+                            <a href="<?php echo esc_url($cta_button_url); ?>" class="cta-button">
+                                <?php echo esc_html($cta_button_text); ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
                 </div>
             <?php endif; ?>
 	</main><!-- #main -->

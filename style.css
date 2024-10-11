@@ -715,7 +715,7 @@ a:active {
   color: #fff;
   padding: 2em 4em;
 }
-.banner::before {
+.banner.banner-bg::before {
   content: "";
   position: absolute;
   top: 0;
