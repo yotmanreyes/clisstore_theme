@@ -25,12 +25,47 @@
   min-height: 80vh;
 }
 
+.main-image {
+  position: relative; /* Keep main image in normal flow */
+  z-index: 1; /* Ensure it is above the gallery images */
+}
+
 .product-gallery {
-  position: absolute;
+  position: absolute; /* Position absolutely within the slide */
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Use flexbox to align images */
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Prevent mouse events on gallery images */
+
+  & img {
+    position: absolute; /* Position each gallery image absolutely */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+  }
+
+  .product-gallery:hover img {
+    opacity: 0; /* Hide all on hover */
+  }
+
+  .product-gallery:hover img:nth-child(1) {
+    opacity: 1; /* Show first image on hover */
+  }
+  .product-gallery:hover img:nth-child(2) {
+    opacity: 1; /* Show second image on hover */
+  }
+  .product-gallery:hover img:nth-child(3) {
+    opacity: 1; /* Show third image on hover */
+  }
+  /* Optional styles for better visibility of hovered images */
+  .product-gallery:hover img:nth-child(n + 2) {
+    opacity: 0; /* Hide all but first image on hover */
+  }
 }
 
 .product-description {
