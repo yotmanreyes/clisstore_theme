@@ -261,6 +261,7 @@
   transform: translateX(100%);
   z-index: -1;
   opacity: 0;
+  padding: 4rem;
   &.is-show {
     z-index: 100;
     opacity: 1;
