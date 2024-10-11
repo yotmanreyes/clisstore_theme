@@ -39,7 +39,6 @@
   display: flex; /* Use flexbox to align images */
   justify-content: center;
   align-items: center;
-  pointer-events: none; /* Prevent mouse events on gallery images */
 
   & img {
     position: absolute; /* Position each gallery image absolutely */

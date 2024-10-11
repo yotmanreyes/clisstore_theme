@@ -624,7 +624,6 @@ a:active {
   display: flex; /* Use flexbox to align images */
   justify-content: center;
   align-items: center;
-  pointer-events: none; /* Prevent mouse events on gallery images */
   /* Optional styles for better visibility of hovered images */
 }
 .product-gallery img {
