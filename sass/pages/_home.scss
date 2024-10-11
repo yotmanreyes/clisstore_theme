@@ -249,3 +249,13 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.search-container,
+.shopcart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: calc(100% - 5rem);
+  transform: translateX(100%);
+}
