@@ -5,7 +5,7 @@
   let searchContainer = document.querySelector(".search-container");
   let shopCartContainer = document.querySelector(".shopcart-container");
   let searchBoxTrigger = document.querySelector(".search-box-trigger");
-  let shopCartTrigger = document.querySelector(".shopcart-container");
+  let shopCartTrigger = document.querySelector(".shopcart-trigger");
 
   openMenuTrigger.addEventListener("click", function () {
     document.body.classList.toggle("fixed-height");
