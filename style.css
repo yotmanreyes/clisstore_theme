@@ -655,6 +655,7 @@ a:active {
 }
 
 .swiper-slide {
+  position: relative;
   height: 100%; /* Asegura que cada diapositiva ocupe toda la altura del contenedor */
   display: flex;
   justify-content: center;
