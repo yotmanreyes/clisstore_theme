@@ -219,9 +219,21 @@ get_header();
 
     <aside>
         <div class="search-container">
+            <button class="close-searchbox">
+                <svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 32H63.3079" stroke="#111111"></path>
+                    <path d="M49.98 46.9938C53.7027 38.8007 56.6521 35.3612 64 32.0224C56.4879 28.3248 53.5721 24.8728 49.98 17.0059" data-ignore-fill="" stroke="#111111"></path>
+                </svg>
+            </button>
             <?php get_product_search_form(); ?>
         </div>
         <div class="shopcart-container">
+            <button class="close-shopcart">
+                <svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 32H63.3079" stroke="#111111"></path>
+                    <path d="M49.98 46.9938C53.7027 38.8007 56.6521 35.3612 64 32.0224C56.4879 28.3248 53.5721 24.8728 49.98 17.0059" data-ignore-fill="" stroke="#111111"></path>
+                </svg>
+            </button>
             <?php 
                 // Get all cart items
                 $cart_items = WC()->cart->get_cart();
