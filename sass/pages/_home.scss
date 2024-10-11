@@ -49,21 +49,23 @@
     transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
   }
 
-  .product-gallery:hover img {
+  &:hover img {
     opacity: 0; /* Hide all on hover */
   }
 
-  .product-gallery:hover img:nth-child(1) {
+  &:hover img:nth-child(1) {
     opacity: 1; /* Show first image on hover */
   }
-  .product-gallery:hover img:nth-child(2) {
+
+  &:hover img:nth-child(2) {
     opacity: 1; /* Show second image on hover */
   }
-  .product-gallery:hover img:nth-child(3) {
+
+  &:hover img:nth-child(3) {
     opacity: 1; /* Show third image on hover */
   }
   /* Optional styles for better visibility of hovered images */
-  .product-gallery:hover img:nth-child(n + 2) {
+  &:hover img:nth-child(n + 2) {
     opacity: 0; /* Hide all but first image on hover */
   }
 }
