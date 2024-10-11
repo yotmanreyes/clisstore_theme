@@ -229,6 +229,9 @@ input[type=submit] {
   width: 100%;
   padding: 20px;
 }
+.site-footer .footer-payment {
+  padding-bottom: 20px;
+}
 .site-footer .footer-payment ul {
   display: flex;
   justify-content: center;
