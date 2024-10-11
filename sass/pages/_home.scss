@@ -256,6 +256,14 @@
   top: 0;
   right: 0;
   background-color: #fff;
-  width: calc(100% - 5rem);
+  width: 50vw;
+  height: 100vh;
   transform: translateX(100%);
+  z-index: -1;
+  opacity: 0;
+  &.is-show {
+    z-index: 100;
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
