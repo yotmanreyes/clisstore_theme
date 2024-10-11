@@ -39,34 +39,36 @@
   display: flex; /* Use flexbox to align images */
   justify-content: center;
   align-items: center;
+}
 
-  & img {
-    position: absolute; /* Position each gallery image absolutely */
-    top: 0;
-    left: 0;
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
-  }
+.gallery-image {
+  position: absolute; /* Position each gallery image absolutely */
+  top: 0;
+  left: 0;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
 
-  &:hover img {
-    opacity: 0; /* Hide all on hover */
-  }
+.product-gallery:hover .gallery-image {
+  opacity: 0; /* Hide all on hover */
+}
 
-  &:hover img:nth-child(1) {
-    opacity: 1; /* Show first image on hover */
-  }
+/* Show the first image on hover */
+.product-gallery:hover .gallery-image:first-child {
+  opacity: 1; /* Show first image on hover */
+}
 
-  &:hover img:nth-child(2) {
-    opacity: 1; /* Show second image on hover */
-  }
+/* Show the next image on hover based on index */
+.product-gallery:hover .gallery-image:nth-child(n):hover {
+  opacity: 1; /* Show hovered image */
+}
 
-  &:hover img:nth-child(3) {
-    opacity: 1; /* Show third image on hover */
-  }
-  /* Optional styles for better visibility of hovered images */
-  &:hover img:nth-child(n + 2) {
-    opacity: 0; /* Hide all but first image on hover */
-  }
+/* Show all images when hovering over the gallery */
+.product-gallery:hover .gallery-image:nth-child(n) {
+  opacity: 0; /* Reset all to hidden */
+}
+.product-gallery:hover .gallery-image:nth-child(n + 1):hover {
+  opacity: 1; /* Show hovered image */
 }
 
 .product-description {
