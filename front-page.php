@@ -50,7 +50,7 @@ get_header();
                                 } else {
                                     // Si no hay imagen destacada, mostrar la primera imagen de la galería
                                     if ( $attachment_ids ) {
-                                        echo wp_get_attachment_image( $attachment_ids[0], 'full' );
+                                        echo wp_get_attachment_image( $attachment_ids[0], 'full', false, array('class' => 'main-image') );
                                     }
                                 }
 
@@ -58,7 +58,7 @@ get_header();
                                 if ( count( $attachment_ids ) > 1 ) {
                                     echo '<div class="product-gallery">';
                                     foreach( $attachment_ids as $attachment_id ) {
-                                        echo wp_get_attachment_image( $attachment_id, 'thumbnail' );
+                                        echo wp_get_attachment_image( $attachment_id, 'full', false, array('class' => 'gallery-image') );
                                     }
                                     echo '</div>';
                                 }
