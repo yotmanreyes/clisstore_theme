@@ -870,6 +870,24 @@ a:active {
   transform: translate(-50%, -50%);
 }
 
+.instagram-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 100;
+  background-color: #fff;
+  padding: 8px;
+}
+.instagram-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .search-container,
 .shopcart-container {
   position: fixed;
