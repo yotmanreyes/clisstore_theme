@@ -263,5 +263,9 @@ get_header();
     <a href="<?php echo get_theme_mod('whatsapp-url') ?>" class="whatsapp-icon">
         <img src="<?php echo get_template_directory_uri() . '/images/wa-icon.svg' ?>" alt="">
     </a>
+    
+    <a href="<?php echo get_theme_mod('instagram-url') ?>" class="instagram-icon">
+        <img src="<?php echo get_template_directory_uri() . '/images/instagram-icon.svg' ?>" alt="">
+    </a>
 <?php
 get_footer();
