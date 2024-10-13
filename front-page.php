@@ -15,6 +15,8 @@
 get_header();
 ?>
 
+    <?php include_once('popup.php') ?>
+
     <section class="frontpage-banner" style='<?php echo "background:url(" . get_theme_mod('header_background_image') . ") no-repeat;"; ?>' >
        <div class="content">
             <h1><?php echo get_theme_mod('header_title') ?></h1>
