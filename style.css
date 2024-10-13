@@ -559,6 +559,9 @@ a:active {
   background-color: #fff;
   z-index: 99999;
 }
+.popup .section {
+  flex-basis: 50%;
+}
 .popup .custom-logo {
   max-width: 150px;
 }
