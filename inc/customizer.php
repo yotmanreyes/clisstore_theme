@@ -234,6 +234,16 @@ function clisstore_theme_customize_register( $wp_customize ) {
         'title' => __('Pop-Up Section', 'your-textdomain'),
         'priority' => 60,
     ));
+
+    // Añadir configuración para la imagen de fondo
+    $wp_customize->add_setting( 'popup_background_image' );
+
+    // Control para subir la imagen
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'popup_background_image', array(
+        'label'    => __( 'Imagen de Fondo del Encabezado', 'mytheme' ),
+        'section'  => 'popup_section',
+        'settings' => 'popup_background_image',
+    )));
 }
 add_action( 'customize_register', 'clisstore_theme_customize_register' );
 
