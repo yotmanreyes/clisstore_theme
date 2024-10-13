@@ -260,11 +260,11 @@ get_header();
         </div>
     </aside>
     
-    <a href="<?php echo get_theme_mod('whatsapp_number') ?>" class="whatsapp-icon">
+    <a href="<?php echo get_theme_mod('whatsapp_number') ?>" class="whatsapp-icon" target="_blank">
         <img src="<?php echo get_template_directory_uri() . '/images/wa-icon.svg' ?>" alt="">
     </a>
     
-    <a href="<?php echo get_theme_mod('instagram_url') ?>" class="instagram-icon">
+    <a href="<?php echo get_theme_mod('instagram_url') ?>" class="instagram-icon" target="_blank">
         <img src="<?php echo get_template_directory_uri() . '/images/instagram-icon.svg' ?>" alt="">
     </a>
 <?php
