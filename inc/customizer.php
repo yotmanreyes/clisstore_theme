@@ -196,6 +196,38 @@ function clisstore_theme_customize_register( $wp_customize ) {
         'section' => 'cta_banner_section',
         'type' => 'url',
     ));
+
+    // Add a section for Social Media
+    $wp_customize->add_section('social_media_section', array(
+        'title'    => __('Social Media', 'your_theme_textdomain'),
+        'priority' => 30,
+    ));
+
+    // Add setting for Instagram URL
+    $wp_customize->add_setting('instagram_url', array(
+        'default'   => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    // Add control for Instagram URL
+    $wp_customize->add_control('instagram_url', array(
+        'label'      => __('Instagram URL', 'your_theme_textdomain'),
+        'section'    => 'social_media_section',
+        'type'       => 'url',
+    ));
+
+    // Add setting for WhatsApp phone number
+    $wp_customize->add_setting('whatsapp_number', array(
+        'default'   => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    // Add control for WhatsApp phone number
+    $wp_customize->add_control('whatsapp_number', array(
+        'label'      => __('WhatsApp Phone Number', 'your_theme_textdomain'),
+        'section'    => 'social_media_section',
+        'type'       => 'text',
+    ));
 }
 add_action( 'customize_register', 'clisstore_theme_customize_register' );
 
