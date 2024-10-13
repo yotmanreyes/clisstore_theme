@@ -561,6 +561,7 @@ a:active {
 }
 .popup .popup-section {
   flex-basis: 50%;
+  text-align: center;
 }
 .popup .custom-logo {
   max-width: 150px;
