@@ -228,6 +228,12 @@ function clisstore_theme_customize_register( $wp_customize ) {
         'section'    => 'social_media_section',
         'type'       => 'text',
     ));
+
+    // Pop-up section
+    $wp_customize->add_section('popup_section', array(
+        'title' => __('Pop-Up Section', 'your-textdomain'),
+        'priority' => 60,
+    ));
 }
 add_action( 'customize_register', 'clisstore_theme_customize_register' );
 
