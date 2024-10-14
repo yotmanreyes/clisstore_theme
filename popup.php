@@ -8,7 +8,7 @@
         <p><?php echo get_theme_mod('popup-description') ?></p>
 
         <form action="">
-            <div class="form-inline">
+            <div class="form-field form-inline">
                 <input type="text" class="form-control" name="name" placeholder="Name">
                 <input type="text" class="form-control" name="lastname" placeholder="Lastname">
             </div>

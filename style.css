@@ -166,6 +166,9 @@ input[type=submit] {
 .form-field {
   margin: 16px;
 }
+.form-field.form-inline {
+  display: flex;
+}
 
 .form-control {
   display: block;
