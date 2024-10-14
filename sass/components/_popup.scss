@@ -13,6 +13,11 @@
   & .popup-section {
     flex-basis: 50%;
     text-align: center;
+
+    &:nth-child(1) img{
+        display: block;
+    }
+
     &:nth-child(2) {
       padding: 2em 1em;
     }
