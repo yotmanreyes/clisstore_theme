@@ -163,6 +163,19 @@ input[type=submit] {
   padding: 0.6em 1em 0.4em;
 }
 
+.form-control {
+  padding: 0px 0px 0px 16px;
+  height: 40px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-family: Poppins-Klaviyo-Hosted, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  background-color: rgb(244, 244, 244);
+  border: 1px solid rgb(96, 106, 114);
+}
+
 /* Otros estilos de formularios... */
 .site-header {
   background-color: #fff;
