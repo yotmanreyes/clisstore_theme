@@ -9,8 +9,8 @@
 
         <form action="">
             <div class="form-inline">
-                <input type="text" class="form-control" name="Name" placeholder="">
-                <input type="text" class="form-control" name="Lastname" placeholder="">
+                <input type="text" class="form-control" name="name" placeholder="Name">
+                <input type="text" class="form-control" name="lastname" placeholder="Lastname">
             </div>
             <div class="form-field">
                 <input type="tel" name="" id="" placeholder="Phone Number">
