@@ -163,6 +163,10 @@ input[type=submit] {
   padding: 0.6em 1em 0.4em;
 }
 
+.form-field {
+  margin: 16px;
+}
+
 .form-control {
   display: block;
   width: 100%;
