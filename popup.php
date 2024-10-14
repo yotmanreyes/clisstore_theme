@@ -13,13 +13,13 @@
                 <input type="text" class="form-control" name="lastname" placeholder="Lastname">
             </div>
             <div class="form-field">
-                <input type="tel" name="" id="" placeholder="Phone Number">
+                <input type="tel" class="form-control" name="telephone" id="" placeholder="Phone Number">
             </div>
             <div class="form-field">
-                <input type="email" name="" id="" placeholder="Email">
+                <input type="email" class="form-control" name="email" id="" placeholder="Email">
             </div>
             <div class="form-field">
-                <input type="birthdate" name="" id="" placeholder="birthdate">
+                <input type="date" class="form-control" name="birthdate" id="" placeholder="Birthdate">
             </div>
             <button>Confirmar</button>
         </form>
