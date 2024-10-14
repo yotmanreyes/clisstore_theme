@@ -9,12 +9,19 @@
 
         <form action="">
             <div class="form-inline">
-                <input type="text" class="form-control" name="">
-                <input type="text" class="form-control" name="">
+                <input type="text" class="form-control" name="Name" placeholder="">
+                <input type="text" class="form-control" name="Lastname" placeholder="">
             </div>
             <div class="form-field">
-                <input type="email" name="" id="">
+                <input type="tel" name="" id="" placeholder="Phone Number">
             </div>
+            <div class="form-field">
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <div class="form-field">
+                <input type="birthdate" name="" id="" placeholder="birthdate">
+            </div>
+            <button>Confirmar</button>
         </form>
     </div>
 </div>
