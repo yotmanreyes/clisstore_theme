@@ -147,7 +147,12 @@ table {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+  pointer-events: none;
+}
+.backdrop.is-show {
   z-index: 10;
+  pointer-events: auto;
 }
 
 button,
@@ -587,6 +592,11 @@ a:active {
   min-height: 50vh;
   transform: translate(-50%, -50%);
   background-color: #fff;
+  z-index: -1;
+  opacity: 0;
+}
+.popup.is-show {
+  z-index: 1;
   z-index: 99999;
 }
 .popup .popup-section {

@@ -8,6 +8,9 @@
   let shopCartTrigger = document.querySelector(".shopcart-trigger");
   let searchBoxCloseBtn = document.querySelector(".close-searchbox");
   let shopCartCloseBtn = document.querySelector(".close-shopcart");
+  let closePopUp = document.querySelector(".close-popup");
+  let backdrop = document.querySelector(".backdrop");
+  let popup = document.querySelector(".popup");
 
   openMenuTrigger.addEventListener("click", function () {
     document.body.classList.toggle("fixed-height");
@@ -28,5 +31,10 @@
 
   shopCartCloseBtn.addEventListener("click", function () {
     shopCartContainer.classList.remove("is-show");
+  });
+
+  closePopUp.addEventListener("click", function () {
+    popup.classList.remove("is-show");
+    backdrop.classList.remove("is-show");
   });
 })();
