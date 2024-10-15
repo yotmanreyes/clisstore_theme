@@ -48,6 +48,11 @@
 }
 
 .close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
   background-color: #111;
   padding: 5px;
   border-radius: 50%;
