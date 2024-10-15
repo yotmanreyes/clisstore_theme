@@ -21,7 +21,7 @@
             <div class="form-field">
                 <input type="date" class="form-control" name="birthdate" id="" placeholder="Birthdate">
             </div>
-            <button class="btn btn-primary">Confirmar</button>
+            <button class="btn btn-secondary btn-block">Confirmar</button>
         </form>
     </div>
 </div>
