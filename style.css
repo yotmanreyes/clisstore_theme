@@ -630,8 +630,9 @@ a:active {
   color: #fff;
   background-color: #111;
   border-radius: 50%;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 800;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 /* Text meant only for screen readers. */
