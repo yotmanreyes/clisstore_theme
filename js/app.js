@@ -40,7 +40,7 @@
 
   setTimeout(function () {
     showPopup();
-  }, 2000);
+  }, 5000);
 
   function showPopup() {
     popup.classList.add("is-show");
