@@ -412,6 +412,13 @@ input[type=submit]:focus {
   color: #fff;
   background-color: #000;
 }
+.btn.btn-block {
+  width: 100%;
+  max-width: unset;
+}
+.btn.btn-secondary {
+  background-color: #111;
+}
 
 .button-reset {
   cursor: pointer;

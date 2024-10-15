@@ -34,6 +34,15 @@ input[type="submit"] {
     color: #fff;
     background-color: #000;
   }
+
+  &.btn-block {
+    width: 100%;
+    max-width: unset;
+  }
+
+  &.btn-secondary {
+    background-color: #111;
+  }
 }
 
 .button-reset {
