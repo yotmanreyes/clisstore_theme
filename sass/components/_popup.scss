@@ -11,8 +11,8 @@
   background-color: #fff;
   z-index: -1;
   opacity: 0;
-  &.is-show{
-    z-index: 1;
+  &.is-show {
+    opacity: 1;
     z-index: 99999;
   }
 
