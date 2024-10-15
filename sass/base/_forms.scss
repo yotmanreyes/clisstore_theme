@@ -34,7 +34,7 @@ input[type="submit"] {
   background-color: rgb(244, 244, 244);
   border: 1px solid rgb(96, 106, 114);
   &::placeholder {
-    background-color: #111;
+    color: #111;
   }
 }
 
