@@ -37,4 +37,13 @@
     popup.classList.remove("is-show");
     backdrop.classList.remove("is-show");
   });
+
+  setTimeout(function () {
+    showPopup();
+  }, 2000);
+
+  function showPopup() {
+    popup.classList.add("is-show");
+    backdrop.classList.add("is-show");
+  }
 })();
