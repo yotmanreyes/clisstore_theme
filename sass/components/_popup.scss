@@ -1,5 +1,6 @@
 .popup {
   display: flex;
+  flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -11,11 +12,11 @@
   z-index: 99999;
 
   & .popup-section {
-    flex-basis: 50%;
+    flex-basis: 100%;
     text-align: center;
 
-    &:nth-child(1) img{
-        display: block;
+    &:nth-child(1) img {
+      display: none;
     }
 
     &:nth-child(2) {
@@ -25,5 +26,23 @@
 
   & .custom-logo {
     max-width: 150px;
+  }
+}
+
+@media (min-width: 800px) {
+  .popup {
+    display: flex;
+    flex-direction: row;
+
+    & .popup-section {
+      flex-basis: 50%;
+      text-align: center;
+
+      &:nth-child(1) img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
