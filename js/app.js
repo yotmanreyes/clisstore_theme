@@ -8,7 +8,7 @@
   let shopCartTrigger = document.querySelector(".shopcart-trigger");
   let searchBoxCloseBtn = document.querySelector(".close-searchbox");
   let shopCartCloseBtn = document.querySelector(".close-shopcart");
-  let closePopUp = document.querySelector(".close-popup");
+  let closePopUpBtn = document.querySelector(".close-popup");
   let backdrop = document.querySelector(".backdrop");
   let popup = document.querySelector(".popup");
 
@@ -33,9 +33,12 @@
     shopCartContainer.classList.remove("is-show");
   });
 
-  closePopUp.addEventListener("click", function () {
-    popup.classList.remove("is-show");
-    backdrop.classList.remove("is-show");
+  closePopUpBtn.addEventListener("click", function () {
+    closePopUp();
+  });
+
+  backdrop.addEventListener("click", function () {
+    closePopUp();
   });
 
   setTimeout(function () {
@@ -45,5 +48,10 @@
   function showPopup() {
     popup.classList.add("is-show");
     backdrop.classList.add("is-show");
+  }
+
+  function closePopUp() {
+    popup.classList.remove("is-show");
+    backdrop.classList.remove("is-show");
   }
 })();
