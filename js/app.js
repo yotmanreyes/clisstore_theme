@@ -43,6 +43,8 @@
 
   backdrop.addEventListener("click", function () {
     closePopUp();
+    shopCartContainer.classList.remove("is-show");
+    searchContainer.classList.remove("is-show");
   });
 
   setTimeout(function () {
