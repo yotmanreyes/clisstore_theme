@@ -19,18 +19,22 @@
 
   searchBoxTrigger.addEventListener("click", function () {
     searchContainer.classList.add("is-show");
+    backdrop.classList.add("is-show");
   });
 
   shopCartTrigger.addEventListener("click", function () {
     shopCartContainer.classList.add("is-show");
+    backdrop.classList.add("is-show");
   });
 
   searchBoxCloseBtn.addEventListener("click", function () {
     searchContainer.classList.remove("is-show");
+    backdrop.classList.remove("is-show");
   });
 
   shopCartCloseBtn.addEventListener("click", function () {
     shopCartContainer.classList.remove("is-show");
+    backdrop.classList.remove("is-show");
   });
 
   closePopUpBtn.addEventListener("click", function () {
