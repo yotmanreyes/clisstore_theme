@@ -280,9 +280,11 @@
   z-index: -1;
   opacity: 0;
   padding: 4rem;
+  transition: transform 300ms ease-out;
   &.is-show {
     z-index: 100;
     opacity: 1;
     transform: translateX(0);
+    transition: transform 450ms ease-in;
   }
 }
