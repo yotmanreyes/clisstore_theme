@@ -450,10 +450,11 @@ input[type=submit]:focus {
   display: block;
 }
 
-.post,
-.page {
+.site-main .post,
+.site-main .page {
   padding: 2em 1em;
-  line-height: 1;
+  line-height: 1.5;
+  min-height: 1000px;
 }
 
 .updated:not(.published) {
