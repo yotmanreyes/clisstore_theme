@@ -452,7 +452,8 @@ input[type=submit]:focus {
 
 .post,
 .page {
-  margin: 0 0 1.5em;
+  padding: 2em 1em;
+  line-height: 1;
 }
 
 .updated:not(.published) {
