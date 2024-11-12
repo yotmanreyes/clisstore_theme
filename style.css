@@ -452,9 +452,11 @@ input[type=submit]:focus {
 
 .site-main .post,
 .site-main .page {
+  max-width: 1024px;
+  margin: 4rem auto;
   padding: 2em 1em;
   line-height: 1.5;
-  min-height: 1000px;
+  min-height: 100vh;
 }
 
 .updated:not(.published) {
