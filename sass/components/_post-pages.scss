@@ -4,9 +4,11 @@
 
 .site-main .post,
 .site-main .page {
+  max-width: 1024px;
+  margin: 2rem auto;
   padding: 2em 1em;
-  line-height:1.5;
-  min-height:1000px;
+  line-height: 1.5;
+  min-height: 1000px;
 }
 
 .updated:not(.published) {
