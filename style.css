@@ -1033,4 +1033,97 @@ a:active {
   transition: transform 450ms ease-in;
 }
 
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; /* Fuente general */
+  background-color: #ffffff; /* Fondo blanco */
+  color: #333333; /* Color de texto principal */
+}
+
+/* Títulos de productos */
+.product_title {
+  font-size: 2em; /* Tamaño de fuente grande */
+  color: #000000; /* Color negro */
+  margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Precio del producto */
+.product-price {
+  font-size: 1.5em; /* Tamaño de fuente del precio */
+  color: #d4af37; /* Color dorado */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Descripción del producto */
+.product-description {
+  font-size: 1em; /* Tamaño de fuente normal */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Atributos del producto (tallas) */
+.product-attributes {
+  font-size: 1em; /* Tamaño de fuente normal */
+  color: #000000; /* Color negro */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+  background-color: #25d366; /* Color verde WhatsApp */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Color más oscuro al pasar el ratón */
+}
+
+/* Botones de envío (USPS, UPS) */
+.shipping-buttons {
+  margin-top: 15px;
+}
+
+.shipping-button {
+  background-color: #d4af37; /* Color dorado para botones de envío */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  border: none;
+  cursor: pointer;
+}
+
+.shipping-button:hover {
+  background-color: #b59c2a; /* Color dorado más oscuro al pasar el ratón */
+}
+
+/* Botón "Añadir al carrito" */
+.single_add_to_cart_button {
+  background-color: #000000; /* Fondo negro para el botón añadir al carrito */
+  color: #ffffff; /* Texto blanco */
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+.single_add_to_cart_button:hover {
+  background-color: #333333; /* Color gris oscuro al pasar el ratón */
+}
+
+/* Estilo para la galería del producto */
+.product-gallery img {
+  border-radius: 10px; /* Bordes redondeados en imágenes de la galería */
+  transition: transform 0.3s ease-in-out; /* Transición suave para efectos al pasar el ratón */
+}
+
+.product-gallery img:hover {
+  transform: scale(1.05); /* Efecto zoom al pasar el ratón sobre las imágenes */
+}
+
+/* Productos relacionados título */
+h2 {
+  color: #000000; /* Título en negro para productos relacionados */
+}
+
 /*# sourceMappingURL=style.css.map */
