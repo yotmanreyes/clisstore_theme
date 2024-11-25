@@ -46,7 +46,8 @@ get_header(); ?>
                         }
 
                         // Botón de WhatsApp
-                        echo '<a href="https://wa.me/1234567890?text=Estoy%20interesado%20en%20el%20producto%3A%20' . urlencode(get_the_title()) . '" class="whatsapp-button">Contactar por WhatsApp</a>';
+                        $phone_number = get_theme_mod('whatsapp_number');
+                        echo "<a href='https://wa.me/{$phone_number}?text=Estoy%20interesado%20en%20el%20producto%3A%20" . urlencode(get_the_title()) . "' class='whatsapp-button'>Contactar por WhatsApp</a>";
 
                         // Botones de envío
                         echo '<div class="shipping-buttons">';
