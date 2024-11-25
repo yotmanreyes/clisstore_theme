@@ -1035,6 +1035,9 @@ a:active {
 
 /* Estilo para la galería del producto */
 .single-product_gallery img {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
   border-radius: 10px; /* Bordes redondeados en imágenes de la galería */
   transition: transform 0.3s ease-in-out; /* Transición suave para efectos al pasar el ratón */
 }
