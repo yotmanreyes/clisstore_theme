@@ -1052,7 +1052,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   max-width: 90%;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 .product-grid .first-column, .product-grid .second-column {
   flex-basis: 100%;
