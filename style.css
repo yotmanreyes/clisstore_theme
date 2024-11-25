@@ -1034,14 +1034,14 @@ a:active {
 }
 
 /* Títulos de productos */
-.product_title {
+.single-product_title {
   font-size: 2em; /* Tamaño de fuente grande */
   color: #000000; /* Color negro */
   margin-bottom: 15px; /* Espacio inferior */
 }
 
 /* Precio del producto */
-.product-price {
+.single-product_price {
   font-size: 1.5em; /* Tamaño de fuente del precio */
   color: #d4af37; /* Color dorado */
   margin-bottom: 20px; /* Espacio inferior */
@@ -1105,12 +1105,12 @@ a:active {
 }
 
 /* Estilo para la galería del producto */
-.product-gallery img {
+.single-product_gallery img {
   border-radius: 10px; /* Bordes redondeados en imágenes de la galería */
   transition: transform 0.3s ease-in-out; /* Transición suave para efectos al pasar el ratón */
 }
 
-.product-gallery img:hover {
+.single-product_gallery img:hover {
   transform: scale(1.05); /* Efecto zoom al pasar el ratón sobre las imágenes */
 }
 

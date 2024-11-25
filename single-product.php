@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Salir si se accede directamente
 }
 
-get_header( 'shop' ); ?>
+get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
@@ -14,15 +14,15 @@ get_header( 'shop' ); ?>
             global $product; // Obtener el objeto del producto
 
             // Galería de imágenes del producto
-            echo '<div class="product-gallery">';
+            echo '<div class="single-product_gallery">';
             woocommerce_show_product_images();
             echo '</div>';
 
             // Título del producto
-            echo '<h1 class="product_title">' . get_the_title() . '</h1>';
+            echo '<h1 class="single-product_title">' . get_the_title() . '</h1>';
 
             // Precio del producto
-            echo '<div class="product-price">' . $product->get_price_html() . '</div>';
+            echo '<div class="single-product_price">' . $product->get_price_html() . '</div>';
 
             // Descripción larga
             echo '<div class="product-description">' . apply_filters( 'woocommerce_product_description', $post->post_content ) . '</div>';
@@ -60,4 +60,4 @@ get_header( 'shop' ); ?>
 </div><!-- #primary -->
 
 <?php
-get_footer( 'shop' );
+get_footer();
