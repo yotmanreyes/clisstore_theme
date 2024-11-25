@@ -32,7 +32,7 @@ get_header(); ?>
                         echo '<div class="single-product_price">' . $product->get_price_html() . '</div>';
 
                         // Descripción larga
-                        echo '<div class="product-description">' . apply_filters( 'woocommerce_product_description', $post->post_content ) . '</div>';
+                        echo '<div class="single-product_description">' . apply_filters( 'woocommerce_product_description', $post->post_content ) . '</div>';
 
                         // Mostrar el atributo "size"
                         if ( $product->has_attributes() ) {
