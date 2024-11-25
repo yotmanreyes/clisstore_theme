@@ -104,3 +104,8 @@ h2 {
 .single_add_to_cart_button:hover {
   background-color: #333333; /* Color gris oscuro al pasar el ratón */
 }
+
+.cart {
+  display: flex;
+  margin: 1rem 0;
+}
