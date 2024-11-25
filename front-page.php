@@ -117,7 +117,7 @@ get_header();
                     $args = array(
                         'taxonomy'   => 'product_cat',
                         'hide_empty' => false,
-                        'number'     => 6, // Limitar a 3 categorías
+                        'number'     => 10, // Limitar a 3 categorías
                     );
 
                     $categories = get_terms($args);
