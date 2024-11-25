@@ -1033,6 +1033,30 @@ a:active {
   transition: transform 450ms ease-in;
 }
 
+/* Estilo para la galería del producto */
+.single-product_gallery img {
+  border-radius: 10px; /* Bordes redondeados en imágenes de la galería */
+  transition: transform 0.3s ease-in-out; /* Transición suave para efectos al pasar el ratón */
+}
+
+.single-product_gallery img:hover {
+  transform: scale(1.05); /* Efecto zoom al pasar el ratón sobre las imágenes */
+}
+
+/* Productos relacionados título */
+h2 {
+  color: #000000; /* Título en negro para productos relacionados */
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-grid .first-column, .product-grid .second-column {
+  flex-basis: 100%;
+  max-width: 500px;
+}
+
 /* Títulos de productos */
 .single-product_title {
   font-size: 2em; /* Tamaño de fuente grande */
@@ -1102,21 +1126,6 @@ a:active {
 
 .single_add_to_cart_button:hover {
   background-color: #333333; /* Color gris oscuro al pasar el ratón */
-}
-
-/* Estilo para la galería del producto */
-.single-product_gallery img {
-  border-radius: 10px; /* Bordes redondeados en imágenes de la galería */
-  transition: transform 0.3s ease-in-out; /* Transición suave para efectos al pasar el ratón */
-}
-
-.single-product_gallery img:hover {
-  transform: scale(1.05); /* Efecto zoom al pasar el ratón sobre las imágenes */
-}
-
-/* Productos relacionados título */
-h2 {
-  color: #000000; /* Título en negro para productos relacionados */
 }
 
 /*# sourceMappingURL=style.css.map */
