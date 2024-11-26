@@ -109,3 +109,51 @@ h2 {
   display: flex;
   margin: 1rem 0;
 }
+
+/* Contenedor principal de las imágenes del producto */
+.woocommerce div.product div.images {
+  display: flex; /* Usar flexbox para la disposición */
+  flex-direction: column; /* Colocar las imágenes en columna */
+  align-items: center; /* Centrar horizontalmente */
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para la imagen principal del producto */
+.woocommerce div.product div.images .woocommerce-product-gallery__image {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado sutil */
+  transition: transform 0.3s ease; /* Transición suave para efectos al pasar el ratón */
+}
+
+/* Efecto al pasar el ratón sobre la imagen principal */
+.woocommerce div.product div.images .woocommerce-product-gallery__image:hover {
+  transform: scale(
+    1.05
+  ); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+}
+
+/* Estilo para las miniaturas de la galería */
+.woocommerce div.product div.images .flex-control-thumbs img {
+  width: auto; /* Mantener el aspecto original de las miniaturas */
+  max-width: 80px; /* Ancho máximo de las miniaturas */
+  height: auto; /* Mantiene la proporción de las miniaturas */
+  border-radius: 5px; /* Bordes redondeados en miniaturas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombreado sutil en miniaturas */
+  margin: 5px; /* Espaciado entre miniaturas */
+}
+
+/* Media queries para asegurar que se vea bien en dispositivos móviles */
+@media (max-width: 768px) {
+  .woocommerce div.product div.images {
+    flex-direction: column; /* Mantener la columna en pantallas pequeñas */
+    align-items: stretch; /* Alinear las imágenes al ancho completo del contenedor */
+  }
+
+  .woocommerce div.product div.images .woocommerce-product-gallery__image,
+  .woocommerce div.product div.images .flex-control-thumbs img {
+    width: 100%; /* Las imágenes ocupan todo el ancho en móviles */
+    margin: 5px 0; /* Espaciado reducido en móviles */
+  }
+}
