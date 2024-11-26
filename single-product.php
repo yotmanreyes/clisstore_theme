@@ -50,6 +50,13 @@ get_header(); ?>
                                 echo implode( ', ', $attributes['attributes']->get_options() ); // Mostrar opciones de tamaño
                                 echo '</div>';
                             }
+                           
+                            if ( isset( $attributes['colors'] ) ) { // Verificar si existe el atributo "size"
+                                echo '<div class="product-attributes">';
+                                echo '<strong>Colores:</strong> ';
+                                echo implode( ', ', $attributes['colors']->get_options() ); // Mostrar opciones de tamaño
+                                echo '</div>';
+                            }
                         }
 
                         // Botón de WhatsApp
