@@ -175,8 +175,8 @@
   position: absolute;
   top: 100%;
   display: flex;
-  width: 90%;
-  left: 5%;
+  width: 80%;
+  left: 20%;
   transform: translateY(100%);
   background-color: #fff;
   list-style: none;
@@ -192,6 +192,7 @@
   position: relative;
   &:hover .product-sizes {
     opacity: 1;
+    flex-basis: 33%;
     transform: translateY(-120%);
   }
 }
