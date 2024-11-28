@@ -79,7 +79,8 @@ get_header(); ?>
         </div>
 
         <h2>Productos Relacionados</h2>
-        <?php woocommerce_related_products(); // Lista de productos relacionados ?>
+        <?php woocommerce_related_products(); // Lista de productos relacionados 
+        ?>
 
     </main><!-- #main -->
 </div><!-- #primary -->
