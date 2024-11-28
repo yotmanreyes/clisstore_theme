@@ -44,8 +44,8 @@
                     $total = $cart_item['line_total']; // Total for this item
 
                     // Output product details
-                    echo 'Product Name: ' . esc_html($product_name) . '<br>';
-                    echo 'Quantity: ' . esc_html($quantity) . '<br>';
+                    echo 'Producto: ' . esc_html($product_name) . '<br>';
+                    echo 'Cantidad: ' . esc_html($quantity) . '<br>';
                     echo 'Subtotal: ' . wc_price($subtotal) . '<br>';
                     echo 'Total: ' . wc_price($total) . '<br>';
                     echo '<hr>'; // Separator for each item
