@@ -977,13 +977,23 @@ hr {
   top: 100%;
   display: flex;
   left: 50%;
-  transform: translate(-100%, -50%);
+  transform: translate(100%, -50%);
   background-color: #fff;
   list-style: none;
+  opacity: 0;
+  transform: all 300ms ease;
 }
 .product-sizes .size {
   padding: 10px 15px;
   border-right: 1px solid #eee;
+}
+
+.product-image-slide {
+  position: relative;
+}
+.product-image-slide:hover .product-sizes {
+  opacity: 1;
+  transform: translate(-120%, -50%);
 }
 
 .banner {

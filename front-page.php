@@ -40,7 +40,7 @@ get_header();
                 <div class="swiper-container" id="productsSlider">
                     <div class="swiper-wrapper">
                         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide product-image-slide">
                                 <a class="link" href="<?php echo esc_url(get_the_permalink()); ?>">
                                 <?php
                                     // Obtener todas las imágenes del producto
