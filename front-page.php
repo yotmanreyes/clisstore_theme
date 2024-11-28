@@ -67,11 +67,10 @@ get_header();
                                 
                                     if ( $product->has_attributes() ) {
                                         $attributes = $product->get_attributes();
-                                        $sizes_text = implode(',',$attributes['size']);
-                                        $sizes_list = explode(' ',$attributes['size']);
+                                        $sizes      = $attributes['size']->get_options();
                                         if ( isset( $attributes['size'] ) ) { 
                                             echo '<ul class="product-sizes">';
-                                            foreach($sizes_list as $size){
+                                            foreach($sizes as $size){
                                                 echo '<li class="size">' . $size .  '</li>'; 
                                             }
                                             echo '</ul>';
