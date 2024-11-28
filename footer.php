@@ -28,6 +28,7 @@
                     <path d="M49.98 46.9938C53.7027 38.8007 56.6521 35.3612 64 32.0224C56.4879 28.3248 53.5721 24.8728 49.98 17.0059" data-ignore-fill="" stroke="#111111"></path>
                 </svg>
             </button>
+			<h2 class="text-center">Mi carrito</h2>
             <?php 
                 // Get all cart items
                 $cart_items = WC()->cart->get_cart();
