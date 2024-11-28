@@ -22,44 +22,77 @@
             <?php get_product_search_form(); ?>
         </div>
         <div class="shopcart-container">
-			<button class="close-shopcart button-reset">
-				<svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0 32H63.3079" stroke="#111111"></path>
-					<path d="M49.98 46.9938C53.7027 38.8007 56.6521 35.3612 64 32.0224C56.4879 28.3248 53.5721 24.8728 49.98 17.0059" data-ignore-fill="" stroke="#111111"></path>
-				</svg>
-			</button>
-			<h2 class="text-center">Mi carrito</h2>
-			<div id="cart-items">
-				<?php 
-					// Get all cart items
-					$cart_items = WC()->cart->get_cart();
+		<button class="close-shopcart button-reset">
+			<svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 32H63.3079" stroke="#111111"></path>
+				<path d="M49.98 46.9938C53.7027 38.8007 56.6521 35.3612 64 32.0224C56.4879 28.3248 53.5721 24.8728 49.98 17.0059" data-ignore-fill="" stroke="#111111"></path>
+			</svg>
+		</button>
+		<h2 class="text-center">Mi carrito</h2>
+		<div id="cart-items">
+			<?php 
+				// Get all cart items
+				$cart_items = WC()->cart->get_cart();
 
-					// Loop through each item in the cart
-					foreach ($cart_items as $cart_item_key => $cart_item) {
-						// Get product object
-						$product = $cart_item['data'];
+				// Loop through each item in the cart
+				foreach ($cart_items as $cart_item_key => $cart_item) {
+					// Get product object
+					$product = $cart_item['data'];
 
-						// Get product details
-						$product_name = $product->get_name(); // Product name
-						$quantity = $cart_item['quantity']; // Quantity in cart
-						$subtotal = $cart_item['line_subtotal']; // Subtotal for this item
-						$total = $cart_item['line_total']; // Total for this item
+					// Get product details
+					$product_name = $product->get_name(); // Product name
+					$quantity = $cart_item['quantity']; // Quantity in cart
+					$subtotal = $cart_item['line_subtotal']; // Subtotal for this item
+					$total = $cart_item['line_total']; // Total for this item
+					$product_image = wp_get_attachment_image_src($product->get_image_id(), 'thumbnail'); // Get product image
 
-						// Output product details
-						echo '<div class="cart-item">';
-						echo 'Producto: ' . esc_html($product_name) . '<br>';
-						echo 'Cantidad: <input type="number" class="qty" value="' . esc_html($quantity) . '" data-cart-item-key="' . esc_attr($cart_item_key) . '" min="1"><br>';
-						echo 'Subtotal: ' . wc_price($subtotal) . '<br>';
-						echo 'Total: ' . wc_price($total) . '<br>';
-						echo '</div><hr>'; // Separator for each item
+					// Output product details with image
+					echo '<div class="cart-item">';
+					if ($product_image) {
+						echo '<img src="' . esc_url($product_image[0]) . '" alt="' . esc_attr($product_name) . '" class="product-image" />';
 					}
-				?>
-			</div>
+					echo 'Producto: ' . esc_html($product_name) . '<br>';
+					echo 'Cantidad: <input type="number" class="qty" value="' . esc_html($quantity) . '" data-cart-item-key="' . esc_attr($cart_item_key) . '" min="1"><br>';
+					echo 'Subtotal: ' . wc_price($subtotal) . '<br>';
+					echo 'Total: ' . wc_price($total) . '<br>';
+					echo '</div><hr>'; // Separator for each item
+				}
+			?>
+		</div>
 			<div class="cart-total">
 				<strong>Total del carrito: <?php echo wc_price(WC()->cart->total); ?></strong>
 			</div>
 			<button id="checkout-button" class="button">Proceder al Pago</button> <!-- Checkout button -->
 		</div>
+
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			// Update cart on quantity change
+			$('.qty').on('change', function() {
+				var qty = $(this).val();
+				var cart_item_key = $(this).data('cart-item-key');
+
+				$.ajax({
+					type: 'POST',
+					url: '<?php echo admin_url('admin-ajax.php'); ?>',
+					data: {
+						action: 'update_cart_item',
+						cart_item_key: cart_item_key,
+						quantity: qty,
+					},
+					success: function(response) {
+						$('#cart-items').html(response.cart_items);
+						$('.cart-total strong').text('Total del carrito: ' + response.cart_total);
+					}
+				});
+			});
+
+			// Checkout button click event
+			$('#checkout-button').on('click', function() {
+				window.location.href = '<?php echo wc_get_checkout_url(); ?>';
+			});
+		});
+		</script>
     </aside>
 
 	<div class="backdrop"></div>
