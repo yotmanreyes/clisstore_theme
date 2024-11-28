@@ -171,6 +171,19 @@
   }
 }
 
+.product-sizes {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateY(-100%, -50%);
+  display: flex;
+  background-color: #fff;
+
+  & .size {
+    border-right: 1px solid #eee;
+  }
+}
+
 .banner {
   position: relative;
   display: flex;

@@ -67,10 +67,13 @@ get_header();
                                 
                                     if ( $product->has_attributes() ) {
                                         $attributes = $product->get_attributes();
-                                        if ( isset( $attributes['size'] ) ) { // Verificar si existe el atributo "size"
-                                            echo '<div class="product-sizes">';
-                                            echo implode( ', ', $attributes['size']->get_options() ); // Mostrar opciones de tamaño
-                                            echo '</div>';
+                                        $sizes      = $attributes['size']->get_options();
+                                        if ( isset( $attributes['size'] ) ) { 
+                                            echo '<ul class="product-sizes">';
+                                            foreach($sizes as $size){
+                                                echo '<li class="size">' . $size .  '</li>'; 
+                                            }
+                                            echo '</ul>';
                                         }
                                     } 
 
