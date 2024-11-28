@@ -982,7 +982,7 @@ hr {
   background-color: #fff;
   list-style: none;
   opacity: 0;
-  transform: all 300ms ease;
+  transition: all 300ms ease;
 }
 .product-sizes .size {
   padding: 10px 15px;
@@ -996,7 +996,7 @@ hr {
   opacity: 1;
   flex-basis: 33%;
   transform: translateY(-120%);
-  transform: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .banner {
