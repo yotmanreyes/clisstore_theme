@@ -77,11 +77,6 @@ get_header(); ?>
             endwhile; // Fin del bucle
             ?>
         </div>
-
-        <h2>Productos Relacionados</h2>
-        <?php woocommerce_related_products(); // Lista de productos relacionados 
-        ?>
-
     </main><!-- #main -->
 </div><!-- #primary -->
 
