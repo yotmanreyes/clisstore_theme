@@ -176,7 +176,7 @@
   top: 100%;
   display: flex;
   width: 60%;
-  left: 10%;
+  left: 8%;
   transform: translateY(100%);
   background-color: #fff;
   list-style: none;
@@ -185,6 +185,7 @@
   & .size {
     padding: 10px 15px;
     border-right: 1px solid #eee;
+    flex-basis: 33%;
   }
 }
 
@@ -192,7 +193,6 @@
   position: relative;
   &:hover .product-sizes {
     opacity: 1;
-    flex-basis: 33%;
     transform: translateY(-120%);
     transition: all 300ms ease;
   }
