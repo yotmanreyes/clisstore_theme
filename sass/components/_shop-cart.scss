@@ -8,6 +8,11 @@
   overflow-y: auto;
 }
 
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .close-shopcart {
   background: none;
   border: none;

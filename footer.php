@@ -51,11 +51,13 @@
 					if ($product_image) {
 						echo '<img width="100" src="' . esc_url($product_image[0]) . '" alt="' . esc_attr($product_name) . '" class="product-image" />';
 					}
+					echo '<div class="cart-item-content">';
 					echo 'Producto: ' . esc_html($product_name) . '<br>';
 					echo 'Cantidad: <input type="number" class="qty" value="' . esc_html($quantity) . '" data-cart-item-key="' . esc_attr($cart_item_key) . '" min="1"><br>';
 					echo 'Subtotal: ' . wc_price($subtotal) . '<br>';
 					echo 'Total: ' . wc_price($total) . '<br>';
 					echo '</div><hr>'; // Separator for each item
+					echo '</div>';
 				}
 			?>
 		</div>
