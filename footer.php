@@ -49,7 +49,7 @@
 					// Output product details with image
 					echo '<div class="cart-item">';
 					if ($product_image) {
-						echo '<img src="' . esc_url($product_image[0]) . '" alt="' . esc_attr($product_name) . '" class="product-image" />';
+						echo '<img width="100" src="' . esc_url($product_image[0]) . '" alt="' . esc_attr($product_name) . '" class="product-image" />';
 					}
 					echo 'Producto: ' . esc_html($product_name) . '<br>';
 					echo 'Cantidad: <input type="number" class="qty" value="' . esc_html($quantity) . '" data-cart-item-key="' . esc_attr($cart_item_key) . '" min="1"><br>';
