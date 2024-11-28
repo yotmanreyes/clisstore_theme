@@ -22,37 +22,44 @@
             <?php get_product_search_form(); ?>
         </div>
         <div class="shopcart-container">
-            <button class="close-shopcart button-reset">
-                <svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 32H63.3079" stroke="#111111"></path>
-                    <path d="M49.98 46.9938C53.7027 38.8007 56.6521 35.3612 64 32.0224C56.4879 28.3248 53.5721 24.8728 49.98 17.0059" data-ignore-fill="" stroke="#111111"></path>
-                </svg>
-            </button>
+			<button class="close-shopcart button-reset">
+				<svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 32H63.3079" stroke="#111111"></path>
+					<path d="M49.98 46.9938C53.7027 38.8007 56.6521 35.3612 64 32.0224C56.4879 28.3248 53.5721 24.8728 49.98 17.0059" data-ignore-fill="" stroke="#111111"></path>
+				</svg>
+			</button>
 			<h2 class="text-center">Mi carrito</h2>
-            <?php 
-                // Get all cart items
-                $cart_items = WC()->cart->get_cart();
+			<div id="cart-items">
+				<?php 
+					// Get all cart items
+					$cart_items = WC()->cart->get_cart();
 
-                // Loop through each item in the cart
-                foreach ($cart_items as $cart_item_key => $cart_item) {
-                    // Get product object
-                    $product = $cart_item['data'];
+					// Loop through each item in the cart
+					foreach ($cart_items as $cart_item_key => $cart_item) {
+						// Get product object
+						$product = $cart_item['data'];
 
-                    // Get product details
-                    $product_name = $product->get_name(); // Product name
-                    $quantity = $cart_item['quantity']; // Quantity in cart
-                    $subtotal = $cart_item['line_subtotal']; // Subtotal for this item
-                    $total = $cart_item['line_total']; // Total for this item
+						// Get product details
+						$product_name = $product->get_name(); // Product name
+						$quantity = $cart_item['quantity']; // Quantity in cart
+						$subtotal = $cart_item['line_subtotal']; // Subtotal for this item
+						$total = $cart_item['line_total']; // Total for this item
 
-                    // Output product details
-                    echo 'Producto: ' . esc_html($product_name) . '<br>';
-                    echo 'Cantidad: ' . esc_html($quantity) . '<br>';
-                    echo 'Subtotal: ' . wc_price($subtotal) . '<br>';
-                    echo 'Total: ' . wc_price($total) . '<br>';
-                    echo '<hr>'; // Separator for each item
-                }
-            ?>
-        </div>
+						// Output product details
+						echo '<div class="cart-item">';
+						echo 'Producto: ' . esc_html($product_name) . '<br>';
+						echo 'Cantidad: <input type="number" class="qty" value="' . esc_html($quantity) . '" data-cart-item-key="' . esc_attr($cart_item_key) . '" min="1"><br>';
+						echo 'Subtotal: ' . wc_price($subtotal) . '<br>';
+						echo 'Total: ' . wc_price($total) . '<br>';
+						echo '</div><hr>'; // Separator for each item
+					}
+				?>
+			</div>
+			<div class="cart-total">
+				<strong>Total del carrito: <?php echo wc_price(WC()->cart->total); ?></strong>
+			</div>
+			<button id="checkout-button" class="button">Proceder al Pago</button> <!-- Checkout button -->
+		</div>
     </aside>
 
 	<div class="backdrop"></div>
