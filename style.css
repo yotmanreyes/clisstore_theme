@@ -975,12 +975,14 @@ hr {
 .product-sizes {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateY(-100%, -50%);
   display: flex;
+  left: 50%;
+  transform: translate(-100%, -50%);
   background-color: #fff;
+  list-style: none;
 }
 .product-sizes .size {
+  padding: 10px 15px;
   border-right: 1px solid #eee;
 }
 
