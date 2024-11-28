@@ -225,3 +225,8 @@ if ( ! function_exists( 'clisstore_theme_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
+
+function change_checkout_button_text() {
+    return 'Pagar'; // Replace with your desired text
+}
+add_filter('woocommerce_order_button_text', 'change_checkout_button_text');
