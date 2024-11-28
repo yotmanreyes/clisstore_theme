@@ -43,27 +43,37 @@ get_header();
                             <div class="swiper-slide">
                                 <a class="link" href="<?php echo esc_url(get_the_permalink()); ?>">
                                 <?php
-                                // Obtener todas las imágenes del producto
-                                $attachment_ids = $product->get_gallery_attachment_ids();
+                                    // Obtener todas las imágenes del producto
+                                    $attachment_ids = $product->get_gallery_attachment_ids();
 
-                                // Mostrar la primera imagen como imagen destacada
-                                if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail();
-                                } else {
-                                    // Si no hay imagen destacada, mostrar la primera imagen de la galería
-                                    if ( $attachment_ids ) {
-                                        echo wp_get_attachment_image( $attachment_ids[0], 'full', false, array('class' => 'main-image') );
+                                    // Mostrar la primera imagen como imagen destacada
+                                    if ( has_post_thumbnail() ) {
+                                        the_post_thumbnail();
+                                    } else {
+                                        // Si no hay imagen destacada, mostrar la primera imagen de la galería
+                                        if ( $attachment_ids ) {
+                                            echo wp_get_attachment_image( $attachment_ids[0], 'full', false, array('class' => 'main-image') );
+                                        }
                                     }
-                                }
 
-                                // Mostrar las demás imágenes en una galería (opcional)
-                                if ( count( $attachment_ids ) > 1 ) {
-                                    echo '<div class="product-gallery">';
-                                    foreach( $attachment_ids as $attachment_id ) {
-                                        echo wp_get_attachment_image( $attachment_id, 'full', false, array('class' => 'gallery-image') );
+                                    // Mostrar las demás imágenes en una galería (opcional)
+                                    if ( count( $attachment_ids ) > 1 ) {
+                                        echo '<div class="product-gallery">';
+                                        foreach( $attachment_ids as $attachment_id ) {
+                                            echo wp_get_attachment_image( $attachment_id, 'full', false, array('class' => 'gallery-image') );
+                                        }
+                                        echo '</div>';
                                     }
-                                    echo '</div>';
-                                }
+                                
+                                    if ( $product->has_attributes() ) {
+                                        $attributes = $product->get_attributes();
+                                        if ( isset( $attributes['size'] ) ) { // Verificar si existe el atributo "size"
+                                            echo '<div class="product-sizes">';
+                                            echo implode( ', ', $attributes['size']->get_options() ); // Mostrar opciones de tamaño
+                                            echo '</div>';
+                                        }
+                                    } 
+
                                 ?>
                                 <div class="product-description">
                                     <h4><?php the_title(); ?></h4>
