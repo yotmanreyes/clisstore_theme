@@ -67,7 +67,7 @@ get_header();
                                 
                                     if ( $product->has_attributes() ) {
                                         $attributes = $product->get_attributes();
-                                        $sizes      = explode(',', $attributes['size']->get_options());
+                                        $sizes      = explode(', ', $attributes['size']->get_options());
                                         print_r($sizes);
                                         if ( isset( $attributes['size'] ) ) { 
                                             echo '<ul class="product-sizes">';
