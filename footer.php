@@ -50,8 +50,6 @@
                     echo 'Total: ' . wc_price($total) . '<br>';
                     echo '<hr>'; // Separator for each item
                 }
-
-				woocommerce_order_button()
             ?>
         </div>
     </aside>
