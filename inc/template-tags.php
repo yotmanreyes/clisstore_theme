@@ -179,8 +179,8 @@ function woo_related_products() {
                     $related_product = wc_get_product( $related_product_id );
                     ?>
                     <article class="product-grid-item">
-                        <div class="product-image-slide">
-                            <a class="link" href="<?php echo esc_url( $related_product->get_permalink() ); ?>">
+						<a class="link" href="<?php echo esc_url( $related_product->get_permalink() ); ?>">
+                        	<div class="product-image-slide">
                                 <?php
                                 // Mostrar la imagen destacada
                                 echo $related_product->get_image('full', array('class' => 'main-image'));
@@ -205,12 +205,12 @@ function woo_related_products() {
                                     echo '</ul>';
                                 }
                                 ?>
-                                <div class="product-description">
-                                    <h4><?php echo $related_product->get_name(); ?></h4>
-                                    <p><?php echo $related_product->get_price_html(); ?></p>
-                                </div>
-                            </a>
-                        </div>
+						    </div>
+							<div class="product-description">
+								<h4><?php echo $related_product->get_name(); ?></h4>
+								<p><?php echo $related_product->get_price_html(); ?></p>
+							</div>
+						</a>
                     </article>
                 <?php endforeach; ?>
             </div>
