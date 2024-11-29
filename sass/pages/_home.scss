@@ -308,7 +308,7 @@
   transform: translateX(100%);
   z-index: -1;
   opacity: 0;
-  padding: 4rem;
+  padding: 4rem 2rem;
   transition: transform 300ms ease-out;
   &.is-show {
     z-index: 100;
