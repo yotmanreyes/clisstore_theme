@@ -1144,6 +1144,10 @@ h2 {
   max-width: 500px;
 }
 
+.product-grid-item {
+  max-width: 300px;
+}
+
 .related.products ul {
   display: flex;
 }
