@@ -1147,6 +1147,7 @@ h2 {
 
 .product-grid-item {
   max-width: 300px;
+  margin: 1.5rem 0;
 }
 .product-grid-item .product-image-slide {
   position: relative;
