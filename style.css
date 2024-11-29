@@ -157,6 +157,10 @@ table {
   pointer-events: auto;
 }
 
+.text-align {
+  text-align: center;
+}
+
 button,
 input[type=button],
 input[type=reset],
