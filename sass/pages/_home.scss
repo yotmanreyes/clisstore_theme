@@ -194,7 +194,8 @@
   position: relative;
   &:hover .product-sizes {
     opacity: 1;
-    transform: translateY(-120%);
+    z-index: 10;
+    transform: translateY(-130%);
     transition: all 300ms ease;
   }
 }
