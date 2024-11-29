@@ -173,7 +173,7 @@ function woo_related_products() {
 
     if ( $related_products ) : ?>
         <section class="related products">
-            <h2><?php esc_html_e( 'Productos relacionados', 'woocommerce' ); ?></h2>
+            <h2 class="text-center"><?php esc_html_e( 'Productos relacionados', 'woocommerce' ); ?></h2>
             <div class="products-grid">
                 <?php foreach ( $related_products as $related_product_id ) : 
                     $related_product = wc_get_product( $related_product_id );
