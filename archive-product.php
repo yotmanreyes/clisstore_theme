@@ -116,9 +116,4 @@ if ( woocommerce_product_loop() ) {
  */
 do_action( 'woocommerce_after_main_content' );
 
-/**
- * Hook: woocommerce_sidebar.
- */
-do_action( 'woocommerce_sidebar' );
-
 get_footer( 'shop' );
