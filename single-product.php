@@ -77,6 +77,7 @@ get_header(); ?>
             endwhile; // Fin del bucle
             ?>
         </div>
+        <?php woo_related_products() ?>
     </main><!-- #main -->
 </div><!-- #primary -->
 
