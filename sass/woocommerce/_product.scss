@@ -33,6 +33,11 @@ h2 {
 
 .product-grid-item {
   max-width: 300px;
+
+  & .main-image {
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 .related.products ul {
