@@ -163,3 +163,61 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+function woo_related_products() {
+    global $product;
+
+    if ( ! $product ) return;
+
+    $related_products = wc_get_related_products( $product->get_id(), 4 );
+
+    if ( $related_products ) : ?>
+        <section class="related products">
+            <h2><?php esc_html_e( 'Productos relacionados', 'woocommerce' ); ?></h2>
+            <div class="products-grid">
+                <?php foreach ( $related_products as $related_product_id ) : 
+                    $related_product = wc_get_product( $related_product_id );
+                    ?>
+                    <article class="product-grid-item">
+                        <div class="product-image-slide">
+                            <a class="link" href="<?php echo esc_url( $related_product->get_permalink() ); ?>">
+                                <?php
+                                // Mostrar la imagen destacada
+                                echo $related_product->get_image('full', array('class' => 'main-image'));
+
+                                // Mostrar galería de imágenes
+                                $attachment_ids = $related_product->get_gallery_image_ids();
+                                if ( $attachment_ids ) {
+                                    echo '<div class="product-gallery">';
+                                    foreach( $attachment_ids as $attachment_id ) {
+                                        echo wp_get_attachment_image( $attachment_id, 'thumbnail', false, array('class' => 'gallery-image') );
+                                    }
+                                    echo '</div>';
+                                }
+
+                                // Mostrar atributos (tallas)
+                                if ( $related_product->get_attribute( 'size' ) ) {
+                                    $sizes = explode(', ', $related_product->get_attribute( 'size' ));
+                                    echo '<ul class="product-sizes">';
+                                    foreach($sizes as $size){
+                                        echo '<li class="size">' . esc_html($size) . '</li>'; 
+                                    }
+                                    echo '</ul>';
+                                }
+                                ?>
+                                <div class="product-description">
+                                    <h4><?php echo $related_product->get_name(); ?></h4>
+                                    <p><?php echo $related_product->get_price_html(); ?></p>
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                <?php endforeach; ?>
+            </div>
+        </section>
+    <?php endif;
+}
+
+// Eliminar la función predeterminada de productos relacionados y añadir la nueva
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+add_action( 'woocommerce_after_single_product_summary', 'woo_related_products', 20 );
