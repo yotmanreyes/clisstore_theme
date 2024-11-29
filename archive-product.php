@@ -56,8 +56,8 @@ if ( woocommerce_product_loop() ) {
             global $product;
             ?>
             <article class="product-grid-item">
-                <div class="product-image-slide">
-                    <a class="link" href="<?php echo esc_url(get_the_permalink()); ?>">
+                <a class="link" href="<?php echo esc_url(get_the_permalink()); ?>">
+                    <div class="product-image-slide">
                         <?php
                         // Mostrar la imagen destacada
                         if ( has_post_thumbnail() ) {
@@ -84,12 +84,12 @@ if ( woocommerce_product_loop() ) {
                             echo '</ul>';
                         }
                         ?>
-                        <div class="product-description">
-                            <h4><?php the_title(); ?></h4>
-                            <p><?php echo $product->get_price_html(); ?></p>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                    <div class="product-description">
+                        <h4><?php the_title(); ?></h4>
+                        <p><?php echo $product->get_price_html(); ?></p>
+                    </div>
+                  </a>
             </article>
             <?php
         }
