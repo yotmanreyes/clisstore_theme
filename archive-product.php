@@ -16,19 +16,6 @@ get_header( 'shop' );
  */
 do_action( 'woocommerce_before_main_content' );
 
-// Añadir banner de categoría
-$term = get_queried_object();
-if ($term && !empty($term->term_id)) {
-    $thumbnail_id = get_term_meta($term->term_id, 'thumbnail_id', true);
-    if ($thumbnail_id) {
-        $image = wp_get_attachment_image_src($thumbnail_id, 'full');
-        if ($image) {
-            echo '<div class="category-banner" style="background-image: url(' . esc_url($image[0]) . ');">';
-            echo '<h1 class="category-title">' . esc_html($term->name) . '</h1>';
-            echo '</div>';
-        }
-    }
-}
 
 ?>
 <header class="woocommerce-products-header">

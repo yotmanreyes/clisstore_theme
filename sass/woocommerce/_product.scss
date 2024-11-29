@@ -32,8 +32,11 @@ h2 {
 }
 
 .product-grid-item {
-  position: relative;
   max-width: 300px;
+
+  & .product-image-slide {
+    position: relative;
+  }
 
   & .main-image {
     height: 300px;
