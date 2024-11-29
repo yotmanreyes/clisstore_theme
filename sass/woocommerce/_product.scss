@@ -32,7 +32,7 @@ h2 {
 }
 
 .product-grid-item {
-  max-width: 400px;
+  max-width: 300px;
   margin: 1.5rem 0;
 
   & .product-image-slide {
@@ -40,7 +40,7 @@ h2 {
   }
 
   & .main-image {
-    height: 300px;
+    height: 400px;
     object-fit: cover;
   }
 

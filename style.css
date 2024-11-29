@@ -1154,14 +1154,14 @@ h2 {
 }
 
 .product-grid-item {
-  max-width: 400px;
+  max-width: 300px;
   margin: 1.5rem 0;
 }
 .product-grid-item .product-image-slide {
   position: relative;
 }
 .product-grid-item .main-image {
-  height: 300px;
+  height: 400px;
   object-fit: cover;
 }
 .product-grid-item .product-description {
