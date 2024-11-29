@@ -42,6 +42,11 @@ h2 {
     height: 300px;
     object-fit: cover;
   }
+
+  & .product-description {
+    text-decoration: none;
+    color: #111;
+  }
 }
 
 .related.products ul {
