@@ -1129,14 +1129,17 @@ h2 {
   color: #000000; /* Título en negro para productos relacionados */
 }
 
-.product-grid {
+.product-grid,
+.products-grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 90%;
   margin: 4rem auto;
 }
-.product-grid .first-column, .product-grid .second-column {
+.product-grid .first-column, .product-grid .second-column,
+.products-grid .first-column,
+.products-grid .second-column {
   flex-basis: 100%;
   max-width: 500px;
 }

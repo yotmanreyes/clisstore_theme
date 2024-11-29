@@ -54,7 +54,7 @@ if ( woocommerce_product_loop() ) {
 
             global $product;
             ?>
-            <div class="product-grid-item">
+            <article class="product-grid-item">
                 <div class="product-image-slide">
                     <a class="link" href="<?php echo esc_url(get_the_permalink()); ?>">
                         <?php
@@ -89,7 +89,7 @@ if ( woocommerce_product_loop() ) {
                         </div>
                     </a>
                 </div>
-            </div>
+            </article>
             <?php
         }
     }

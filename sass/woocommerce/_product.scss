@@ -16,7 +16,8 @@ h2 {
   color: #000000; /* Título en negro para productos relacionados */
 }
 
-.product-grid {
+.product-grid,
+.products-grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
