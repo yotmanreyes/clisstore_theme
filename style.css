@@ -679,7 +679,12 @@ a:active {
   justify-content: space-between;
   margin: 1rem 0;
   border-bottom: 1px solid #ccc;
-  padding: 20px 0;
+  padding: 10px 0;
+}
+
+.totals {
+  display: flex;
+  justify-content: space-between;
 }
 
 .close-shopcart {
