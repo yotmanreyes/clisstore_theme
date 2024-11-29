@@ -66,7 +66,7 @@
 			<div class="cart-total">
 				<strong>Total del carrito: <?php echo wc_price(WC()->cart->total); ?></strong>
 			</div>
-			<button id="checkout-button" class="button">Proceder al Pago</button> <!-- Checkout button -->
+			<button id="checkout-button" class="btn btn-checkout">Proceder al Pago</button> <!-- Checkout button -->
 		</div>
 
 		<script type="text/javascript">

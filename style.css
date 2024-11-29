@@ -435,6 +435,10 @@ input[type=submit]:focus {
   background-color: #111;
 }
 
+.btn-checkout {
+  background-color: #111;
+}
+
 .button-reset {
   cursor: pointer;
   -webkit-appearance: none;
